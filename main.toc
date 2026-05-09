@@ -1,0 +1,136 @@
+\contentsline {chapter}{Acknowledgements}{1}{chapter*.1}%
+\contentsline {xchapter}{}{1}{chapter*.1}%
+\contentsline {chapter}{Table of contents}{4}{chapter*.2}%
+\contentsline {xchapter}{}{4}{chapter*.2}%
+\contentsline {chapter}{List of abbreviations}{5}{chapter*.3}%
+\contentsline {xchapter}{}{5}{chapter*.3}%
+\contentsline {chapter}{General Introduction}{6}{chapter*.4}%
+\contentsline {xchapter}{}{6}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}General Framework of the Project}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}General Context of the Project}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Company Presentation}{8}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Organizational Chart}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Existing Information Systems}{10}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Problem Statement}{11}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Identified Pain Points}{11}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Project Objective}{12}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Requirements Analysis}{12}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Functional Requirements}{12}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Non-Functional Requirements}{13}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Development Methodology: Scrum}{13}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Why Scrum Was Chosen}{13}{subsection.1.5.1}%
+\contentsline {subsubsection}{(a) Requirements were not fully clear from the start}{14}{subsubsection*.5}%
+\contentsline {subsubsection}{(b) The internship duration was limited}{14}{subsubsection*.6}%
+\contentsline {subsubsection}{(c) The project was divided into several parts}{14}{subsubsection*.7}%
+\contentsline {subsubsection}{(d) Technical problems needed iterative work}{14}{subsubsection*.8}%
+\contentsline {subsubsection}{(e) Scrum vs. Waterfall}{14}{subsubsection*.9}%
+\contentsline {subsubsection}{(f) Scrum vs. Kanban}{14}{subsubsection*.10}%
+\contentsline {subsubsection}{(g) Final choice}{15}{subsubsection*.11}%
+\contentsline {subsection}{\numberline {1.5.2}Scrum Framework Overview}{15}{subsection.1.5.2}%
+\contentsline {subsubsection}{Roles}{15}{subsubsection*.12}%
+\contentsline {subsubsection}{Artifacts}{15}{subsubsection*.13}%
+\contentsline {subsubsection}{Ceremonies}{15}{subsubsection*.14}%
+\contentsline {subsection}{\numberline {1.5.3}Sprint Plan}{16}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Chosen Technologies and Rationale}{16}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Technology Stack Table}{17}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Chapter Conclusion}{18}{section.1.8}%
+\contentsline {chapter}{\numberline {2}System Analysis and Design}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{20}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Use Case Analysis}{20}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Actors and Access Scope}{20}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Global Use Case Diagram}{21}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Main Use Cases Description}{22}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Data Architecture and ETL-Oriented Design}{22}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Source Systems Exploration and Table Selection}{22}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}View Layer for ETL Simplification}{25}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Unified PostgreSQL Target Schema and Integration Constraints}{27}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Global System Architecture}{28}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Chapter Conclusion}{29}{section.2.5}%
+\contentsline {chapter}{\numberline {3}ETL and Unified Database}{30}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Sprint Backlog}{31}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Sprint Design}{31}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Refinement of data rules and ETL mappings}{31}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Conception}{32}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}ETL Pipeline Architecture}{32}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Data Validation and Control Flow}{34}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Key Design Advantages}{35}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Sprint Realization}{35}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Implementation outcomes}{35}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}Conclusion}{36}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Authentication Module}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Sprint Backlog}{38}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Sprint Design}{38}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Conception}{39}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Use Case Refinement}{39}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Detailed Sequence Diagrams}{41}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Sprint Realization}{44}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Authentication Interface}{44}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Admin OTP Verification Interface}{45}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Registration Interface}{45}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Administrator Account Approval Interface}{46}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Approval Email Notification}{46}{subsection.4.5.5}%
+\contentsline {subsection}{\numberline {4.5.6}Error Handling Scenarios}{47}{subsection.4.5.6}%
+\contentsline {section}{\numberline {4.6}Security Considerations}{47}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Conclusion}{48}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Administration Module}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{50}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Sprint Backlog}{50}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Sprint Design}{50}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Dashboard module design}{50}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Projects module design}{51}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Conception}{51}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Administration use case diagram}{51}{subsection.5.4.1}%
+\contentsline {section}{\numberline {5.5}Sprint Realization}{52}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Implementation outcomes}{52}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Administration dashboard and users interface}{53}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Projects interface}{53}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Assign project interface}{54}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.5.5}Settings page interface}{54}{subsection.5.5.5}%
+\contentsline {subsection}{\numberline {5.5.6}Filtering and pagination interface}{55}{subsection.5.5.6}%
+\contentsline {section}{\numberline {5.6}Conclusion}{55}{section.5.6}%
+\contentsline {chapter}{\numberline {6}HR Functional Modules}{56}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{57}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Sprint Backlog}{57}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Sprint Design}{57}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Employees page design mockup}{57}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Check-In/Out page design mockup}{58}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Employee Leave page design mockup}{58}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Conception}{59}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}HR use case diagram}{59}{subsection.6.4.1}%
+\contentsline {section}{\numberline {6.5}Sprint Realization}{60}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Implementation outcomes}{60}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Employees page interface}{61}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}Check-In/Out page interface}{61}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}Employee Leave page interface}{62}{subsection.6.5.4}%
+\contentsline {section}{\numberline {6.6}Conclusion}{62}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Project Manager Modules}{63}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{64}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Sprint Backlog}{64}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Sprint Design}{64}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Projects page design mockup}{64}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Members page design mockup}{65}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Members Attendance page design mockup}{65}{subsection.7.3.3}%
+\contentsline {section}{\numberline {7.4}Conception}{66}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Project Manager use case diagram}{66}{subsection.7.4.1}%
+\contentsline {section}{\numberline {7.5}Sprint Realization}{67}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Implementation outcomes}{67}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Projects page interface}{68}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Members page interface}{68}{subsection.7.5.3}%
+\contentsline {subsection}{\numberline {7.5.4}Members attendance monitoring interface}{69}{subsection.7.5.4}%
+\contentsline {section}{\numberline {7.6}Conclusion}{69}{section.7.6}%
+\contentsline {chapter}{\numberline {8}RH Agent Integration}{70}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction}{71}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Sprint Backlog}{71}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Sprint Design}{71}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Conversation and interaction design}{71}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}LangGraph routing design}{72}{subsection.8.3.2}%
+\contentsline {section}{\numberline {8.4}Conception}{73}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}RH Agent sequence diagram}{73}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Agent state model conception}{74}{subsection.8.4.2}%
+\contentsline {section}{\numberline {8.5}Sprint Realization}{74}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Implementation outcomes}{74}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}RH Agent interface}{75}{subsection.8.5.2}%
+\contentsline {section}{\numberline {8.6}Conclusion}{75}{section.8.6}%
+\contentsline {xchapter}{}{76}{chapter*.15}%
