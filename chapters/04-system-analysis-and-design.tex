@@ -1,10 +1,39 @@
 \chapter{System Analysis and Design}
 \minitoc
 \clearpage
-\section{Introduction}
-In this chapter, we explain the analysis and design work done before coding. We describe who uses the system, how they interact with it, how data is organized, and what global architecture was chosen.
 
-\section{Use Case Analysis}
+\section{Introduction}
+This chapter presents \textbf{Sprint 1}, dedicated to system analysis and design. During this sprint, the objective was not to implement functional modules yet, but to understand the source systems, define user needs, identify the required data scope, and prepare the main design artifacts that would guide the following development sprints.
+
+The work carried out in this sprint focused on four complementary axes: identifying the actors and their access scope, modeling the main use cases, analyzing the source systems and the ETL-oriented data structure, and defining the global architecture of the solution.
+
+\section{Sprint Backlog}
+The Sprint 1 backlog focused on analysis, modeling, and architectural preparation for the rest of the project.
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|l|>{\raggedright\arraybackslash}p{10.2cm}|l|}
+		\hline
+		\textbf{ID} & \textbf{Backlog Item} & \textbf{Priority} \\
+		\hline
+		S1-BL-01 & Identify the main system actors and define their access scope and responsibilities. & High \\
+		\hline
+		S1-BL-02 & Model the global use case diagram of the platform and describe the principal user interactions. & High \\
+		\hline
+		S1-BL-03 & Explore the BioTime and EasyProject schemas and select the tables required for integration. & High \\
+		\hline
+		S1-BL-04 & Design SQL views that simplify ETL extraction from the two source systems. & High \\
+		\hline
+		S1-BL-05 & Define the initial unified PostgreSQL target schema and key integration constraints. & High \\
+		\hline
+		S1-BL-06 & Establish the main application diagram and the global system architecture used as the reference for later sprints. & Medium \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\section{Sprint Design}
+Sprint 1 design aimed to transform a business problem into a structured technical solution. The design effort started with user and access analysis, then moved to source-system exploration, and finally to the high-level architecture that would orient ETL and application development.
+
 \subsection{Actors and Access Scope}
 The platform has three main actors. Each actor has a clear role in the system:
 
@@ -13,9 +42,18 @@ The platform has three main actors. Each actor has a clear role in the system:
 	\item \textbf{Human Resources (HR)}: works on company-wide HR follow-up. HR can view employees, employees' clock-in/out records, and employees' leave information.
 	\item \textbf{Project Manager}: works at team level. The Project Manager can view members, assigned projects, and team attendance.
 \end{itemize}
-\newpage
-\subsection{Global Use Case Diagram}
 
+\subsection{Functional Scope of the Sprint}
+During this sprint, the design effort focused on clarifying what each actor must be able to do before implementation begins. This early clarification reduced ambiguity and helped prepare later module decomposition.
+
+\begin{itemize}[noitemsep]
+	\item The \textbf{Administrator} scope was defined around account lifecycle control and project-to-manager assignment.
+	\item The \textbf{HR} scope was defined around organization-wide consultation of employee, attendance, and leave information.
+	\item The \textbf{Project Manager} scope was restricted to assigned projects and their related members and attendance indicators.
+\end{itemize}
+
+\subsection{Global Use Case Diagram}
+The global use case diagram was produced during Sprint 1 to consolidate the functional perimeter of the future application and establish a shared understanding of actor responsibilities.
 
 \begin{figure}[H]
 	\centering
@@ -42,6 +80,8 @@ The platform has three main actors. Each actor has a clear role in the system:
 \end{itemize}
 
 \subsection{Main Use Cases Description}
+To complement the global use case diagram, the main use cases were described textually so they could be referenced more easily during later design and implementation work.
+
 \begin{center}
 	\renewcommand{\arraystretch}{1.2}
 	\begin{tabular}{|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{4.8cm}|>{\raggedright\arraybackslash}p{6.8cm}|}
@@ -69,9 +109,6 @@ The platform has three main actors. Each actor has a clear role in the system:
 	\end{tabular}
 \end{center}
 
-\Needspace{0.20\textheight}
-\section{Data Architecture and ETL-Oriented Design}
-\Needspace{0.18\textheight}
 \subsection{Source Systems Exploration and Table Selection}
 The two source systems, \textbf{BioTime} and \textbf{EasyProject}, contain many operational tables. To keep the integration clear and efficient, we first explored both schemas and kept only the entities needed for ETL.
 
@@ -122,7 +159,6 @@ Figure~\ref{fig:easyproject-selected-tables} shows the EasyProject tables kept f
 \vspace*{\fill}
 \clearpage
 
-\Needspace{0.18\textheight}
 \subsection{View Layer for ETL Simplification}
 After selecting the source tables, we created SQL views in each system. These views standardize field names, reduce join complexity, and provide clean ETL inputs.
 
@@ -172,7 +208,9 @@ Figure~\ref{fig:easyproject-created-views} presents the EasyProject views. This 
 \vspace*{\fill}
 \clearpage
 
-\Needspace{0.16\textheight}
+\section{Conception}
+The conception phase of Sprint 1 consolidated the main design artifacts that would guide subsequent implementation. It covered the target data structure, the integration constraints, and the global technical architecture of the solution.
+
 \subsection{Unified PostgreSQL Target Schema and Integration Constraints}
 The transformed outputs from both view layers are loaded into one unified PostgreSQL schema. At this stage, identifiers and timestamps are normalized, duplicates are removed, and integrity constraints are applied to keep analytics consistent across systems.
 
@@ -199,8 +237,7 @@ Figure~\ref{fig:main-app-diagram} summarizes the main structure of the applicati
 \vspace*{\fill}
 \clearpage
 
-\Needspace{0.20\textheight}
-\section{Global System Architecture}
+\subsection{Global System Architecture}
 
 The architecture starts by extracting data from \textbf{BioTime (PostgreSQL)} and \textbf{EasyProject (MySQL)} with \textbf{SQLAlchemy}. The data is then transformed and loaded into the main application database.
 
@@ -227,8 +264,26 @@ Figure~\ref{fig:global-system-architecture} presents the end-to-end architecture
 	\caption{Global System Architecture Flow}
 	\label{fig:global-system-architecture}
 \end{figure}
+\vspace*{\fill}
+\clearpage
 
+\section{Sprint Realization}
+At the end of Sprint 1, the main outcome was a complete analysis and design baseline that structured the rest of the project. Even though no final user-facing module was delivered yet, this sprint produced the essential functional and technical artifacts used in the following iterations.
 
+\subsection{Main Deliverables of Sprint 1}
+\begin{itemize}[noitemsep]
+	\item Defined the three main actors of the system and clarified their access boundaries.
+	\item Produced the global use case diagram and the textual description of major use cases.
+	\item Explored the BioTime and EasyProject schemas and selected the relevant tables for integration.
+	\item Designed SQL views to simplify extraction and harmonization during ETL processing.
+	\item Prepared the initial unified PostgreSQL target view of the data model.
+	\item Established the main application diagram and the end-to-end global architecture.
+\end{itemize}
+
+\subsection{Sprint 1 Contribution to the Next Sprints}
+Sprint 1 served as the foundation for all later work. The ETL sprint relied on the selected tables, source views, and target schema defined here. The authentication and business-module sprints also reused the actor definitions, access scope, and architecture decisions established during this initial analysis and design phase.
 
 \section{Chapter Conclusion}
-This chapter explained the analysis and design choices of the solution. It covered actors and use cases, ETL-focused data architecture decisions, and the global system architecture. The next chapter focuses on authentication architecture and workflows.
+This chapter presented \textbf{Sprint 1: System Analysis and Design}. It established the functional and technical foundation of the project by identifying actors and use cases, exploring the source systems, preparing the ETL-oriented data structure, and defining the global architecture of the solution.
+
+These outputs created a clear roadmap for implementation. The next chapter moves from analysis and design to concrete data integration work through the ETL process and the construction of the unified database.

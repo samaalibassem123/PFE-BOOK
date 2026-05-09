@@ -1,11 +1,16 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Introduction}{\reset@font\mtcSfont 20}{section.2.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Use Case Analysis}{\reset@font\mtcSfont 20}{section.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Actors and Access Scope}{\reset@font\mtcSSfont 20}{subsection.2.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Global Use Case Diagram}{\reset@font\mtcSSfont 21}{subsection.2.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}Main Use Cases Description}{\reset@font\mtcSSfont 22}{subsection.2.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Data Architecture and ETL-Oriented Design}{\reset@font\mtcSfont 22}{section.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Source Systems Exploration and Table Selection}{\reset@font\mtcSSfont 22}{subsection.2.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}View Layer for ETL Simplification}{\reset@font\mtcSSfont 25}{subsection.2.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Unified PostgreSQL Target Schema and Integration Constraints}{\reset@font\mtcSSfont 27}{subsection.2.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Global System Architecture}{\reset@font\mtcSfont 28}{section.2.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Chapter Conclusion}{\reset@font\mtcSfont 29}{section.2.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Introduction}{\reset@font\mtcSfont 21}{section.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Sprint Backlog}{\reset@font\mtcSfont 21}{section.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Sprint Design}{\reset@font\mtcSfont 21}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Actors and Access Scope}{\reset@font\mtcSSfont 21}{subsection.2.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Functional Scope of the Sprint}{\reset@font\mtcSSfont 22}{subsection.2.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Global Use Case Diagram}{\reset@font\mtcSSfont 22}{subsection.2.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.4}Main Use Cases Description}{\reset@font\mtcSSfont 24}{subsection.2.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.5}Source Systems Exploration and Table Selection}{\reset@font\mtcSSfont 24}{subsection.2.3.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.6}View Layer for ETL Simplification}{\reset@font\mtcSSfont 27}{subsection.2.3.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Conception}{\reset@font\mtcSfont 29}{section.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Unified PostgreSQL Target Schema and Integration Constraints}{\reset@font\mtcSSfont 29}{subsection.2.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Global System Architecture}{\reset@font\mtcSSfont 31}{subsection.2.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Sprint Realization}{\reset@font\mtcSfont 32}{section.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Main Deliverables of Sprint 1}{\reset@font\mtcSSfont 32}{subsection.2.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Sprint 1 Contribution to the Next Sprints}{\reset@font\mtcSSfont 32}{subsection.2.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Chapter Conclusion}{\reset@font\mtcSfont 32}{section.2.6}}

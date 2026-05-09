@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  9 MAY 2026 19:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  9 MAY 2026 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -896,7 +896,7 @@ Package minitoc Info: I0033
 \openout4 = `main.mtc12'.
 
 Package hyperref Info: Option `pageanchor' set `false' on input line 85.
-<logos/utm-header.png, id=490, 175.3752pt x 192.72pt>
+<logos/utm-header.png, id=510, 175.3752pt x 192.72pt>
 File: logos/utm-header.png Graphic file (type png)
 <use logos/utm-header.png>
 Package pdftex.def Info: logos/utm-header.png  used on input line 99.
@@ -931,12 +931,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 100.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 100.
-<logos/logo_fsegt.png, id=492, 225.84375pt x 225.84375pt>
+<logos/logo_fsegt.png, id=512, 225.84375pt x 225.84375pt>
 File: logos/logo_fsegt.png Graphic file (type png)
 <use logos/logo_fsegt.png>
 Package pdftex.def Info: logos/logo_fsegt.png  used on input line 110.
 (pdftex.def)             Requested size: 85.35826pt x 85.35973pt.
-<logos/onetech_b_s_logo.jpeg, id=493, 200.75pt x 200.75pt>
+<logos/onetech_b_s_logo.jpeg, id=513, 200.75pt x 200.75pt>
 File: logos/onetech_b_s_logo.jpeg Graphic file (type jpg)
 <use logos/onetech_b_s_logo.jpeg>
 Package pdftex.def Info: logos/onetech_b_s_logo.jpeg  used on input line 141.
@@ -950,11 +950,11 @@ er.png> <./logos/logo_fsegt.png> <./logos/onetech_b_s_logo.jpeg>]
 
 ] (main.toc [2
 
-] [3])
+] [3] [4])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [4]
+ [5]
 Package hyperref Info: Option `pageanchor' set `true' on input line 31.
 )
 (chapters/02-list-of-abbreviations.tex
@@ -964,12 +964,12 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
 (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
-(chapters/02b-general-introduction.tex [5
+(chapters/02b-general-introduction.tex [6
 
 
 {C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]) 
 (chapters/03-general-introduction.tex
-[6
+[7
 
 ]
 Chapter 1.
@@ -979,56 +979,56 @@ Chapter 1.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 3.
-(main.mtc5) [7
+(main.mtc5) [8
 
-] [8
+] [9
 
 ]
 
 pdfTeX warning: pdflatex.exe (file ./logos/organizational-chart.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<logos/organizational-chart.pdf, id=816, 2646.88875pt x 1648.1575pt>
+<logos/organizational-chart.pdf, id=849, 2646.88875pt x 1648.1575pt>
 File: logos/organizational-chart.pdf Graphic file (type pdf)
 <use logos/organizational-chart.pdf>
 Package pdftex.def Info: logos/organizational-chart.pdf  used on input line 52.
 
 (pdftex.def)             Requested size: 497.90596pt x 310.03473pt.
-[9 <./logos/organizational-chart.pdf>]
-<assets/general/biotime-definition.jpg, id=1022, 1003.75pt x 1003.75pt>
+[10 <./logos/organizational-chart.pdf>]
+<assets/general/biotime-definition.jpg, id=1055, 1003.75pt x 1003.75pt>
 File: assets/general/biotime-definition.jpg Graphic file (type jpg)
 <use assets/general/biotime-definition.jpg>
 Package pdftex.def Info: assets/general/biotime-definition.jpg  used on input l
 ine 77.
 (pdftex.def)             Requested size: 289.19618pt x 289.19618pt.
-<assets/general/easyproject-definition.jpg, id=1024, 197.98969pt x 99.37125pt>
+<assets/general/easyproject-definition.jpg, id=1057, 197.98969pt x 99.37125pt>
 File: assets/general/easyproject-definition.jpg Graphic file (type jpg)
 <use assets/general/easyproject-definition.jpg>
 Package pdftex.def Info: assets/general/easyproject-definition.jpg  used on inp
 ut line 98.
 (pdftex.def)             Requested size: 448.17351pt x 224.93878pt.
- [10
+ [11
 
 
- <./assets/general/biotime-definition.jpg (PNG copy)>] [11 <./assets/general/ea
-syproject-definition.jpg>] [12]
-[13] [14] [15]
+ <./assets/general/biotime-definition.jpg (PNG copy)>] [12 <./assets/general/ea
+syproject-definition.jpg>] [13]
+[14] [15] [16]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 298.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 298.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 298.
-<logos/tech/sqlalchemy.pdf, id=1063, 501.875pt x 501.875pt>
+<logos/tech/sqlalchemy.pdf, id=1096, 501.875pt x 501.875pt>
 File: logos/tech/sqlalchemy.pdf Graphic file (type pdf)
 <use logos/tech/sqlalchemy.pdf>
 Package pdftex.def Info: logos/tech/sqlalchemy.pdf  used on input line 302.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-<logos/tech/fastapi.pdf, id=1064, 501.875pt x 501.875pt>
+<logos/tech/fastapi.pdf, id=1097, 501.875pt x 501.875pt>
 File: logos/tech/fastapi.pdf Graphic file (type pdf)
 <use logos/tech/fastapi.pdf>
 Package pdftex.def Info: logos/tech/fastapi.pdf  used on input line 304.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-<logos/tech/postgresql.pdf, id=1065, 501.875pt x 517.935pt>
+<logos/tech/postgresql.pdf, id=1098, 501.875pt x 517.935pt>
 File: logos/tech/postgresql.pdf Graphic file (type pdf)
 <use logos/tech/postgresql.pdf>
 Package pdftex.def Info: logos/tech/postgresql.pdf  used on input line 308.
@@ -1037,43 +1037,43 @@ Package pdftex.def Info: logos/tech/postgresql.pdf  used on input line 308.
 
 pdfTeX warning: pdflatex.exe (file ./logos/tech/redis.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<logos/tech/redis.pdf, id=1066, 194.97844pt x 146.04562pt>
+<logos/tech/redis.pdf, id=1099, 194.97844pt x 146.04562pt>
 File: logos/tech/redis.pdf Graphic file (type pdf)
 <use logos/tech/redis.pdf>
 Package pdftex.def Info: logos/tech/redis.pdf  used on input line 310.
 (pdftex.def)             Requested size: 19.34724pt x 14.49176pt.
-<logos/tech/mysql.pdf, id=1067, 501.875pt x 501.875pt>
+<logos/tech/mysql.pdf, id=1100, 501.875pt x 501.875pt>
 File: logos/tech/mysql.pdf Graphic file (type pdf)
 <use logos/tech/mysql.pdf>
 Package pdftex.def Info: logos/tech/mysql.pdf  used on input line 312.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-<logos/tech/resend.pdf, id=1068, 180.675pt x 180.675pt>
+<logos/tech/resend.pdf, id=1101, 180.675pt x 180.675pt>
 File: logos/tech/resend.pdf Graphic file (type pdf)
 <use logos/tech/resend.pdf>
 Package pdftex.def Info: logos/tech/resend.pdf  used on input line 314.
 (pdftex.def)             Requested size: 19.34499pt x 19.34499pt.
-<logos/tech/docker.pdf, id=1069, 501.875pt x 282.05376pt>
+<logos/tech/docker.pdf, id=1102, 501.875pt x 282.05376pt>
 File: logos/tech/docker.pdf Graphic file (type pdf)
 <use logos/tech/docker.pdf>
 Package pdftex.def Info: logos/tech/docker.pdf  used on input line 316.
 (pdftex.def)             Requested size: 19.34407pt x 10.87137pt.
-<logos/tech/react.pdf, id=1070, 501.875pt x 501.875pt>
+<logos/tech/react.pdf, id=1103, 501.875pt x 501.875pt>
 File: logos/tech/react.pdf Graphic file (type pdf)
 <use logos/tech/react.pdf>
 Package pdftex.def Info: logos/tech/react.pdf  used on input line 318.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-[16]
-<logos/tech/tailwindcss.pdf, id=1075, 501.875pt x 501.875pt>
+[17]
+<logos/tech/tailwindcss.pdf, id=1108, 501.875pt x 501.875pt>
 File: logos/tech/tailwindcss.pdf Graphic file (type pdf)
 <use logos/tech/tailwindcss.pdf>
 Package pdftex.def Info: logos/tech/tailwindcss.pdf  used on input line 330.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-<logos/tech/shadcn-ui.pdf, id=1076, 501.875pt x 501.875pt>
+<logos/tech/shadcn-ui.pdf, id=1109, 501.875pt x 501.875pt>
 File: logos/tech/shadcn-ui.pdf Graphic file (type pdf)
 <use logos/tech/shadcn-ui.pdf>
 Package pdftex.def Info: logos/tech/shadcn-ui.pdf  used on input line 332.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-<logos/tech/tanstack.pdf, id=1077, 501.875pt x 501.875pt>
+<logos/tech/tanstack.pdf, id=1110, 501.875pt x 501.875pt>
 File: logos/tech/tanstack.pdf Graphic file (type pdf)
 <use logos/tech/tanstack.pdf>
 Package pdftex.def Info: logos/tech/tanstack.pdf  used on input line 334.
@@ -1082,45 +1082,45 @@ File: logos/tech/tanstack.pdf Graphic file (type pdf)
 <use logos/tech/tanstack.pdf>
 Package pdftex.def Info: logos/tech/tanstack.pdf  used on input line 336.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-<logos/tech/langgraph.pdf, id=1078, 501.875pt x 501.875pt>
+<logos/tech/langgraph.pdf, id=1111, 501.875pt x 501.875pt>
 File: logos/tech/langgraph.pdf Graphic file (type pdf)
 <use logos/tech/langgraph.pdf>
 Package pdftex.def Info: logos/tech/langgraph.pdf  used on input line 338.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-<logos/tech/langchain.pdf, id=1079, 501.875pt x 501.875pt>
+<logos/tech/langchain.pdf, id=1112, 501.875pt x 501.875pt>
 File: logos/tech/langchain.pdf Graphic file (type pdf)
 <use logos/tech/langchain.pdf>
 Package pdftex.def Info: logos/tech/langchain.pdf  used on input line 340.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-<logos/tech/ollama.pdf, id=1080, 180.675pt x 180.675pt>
+<logos/tech/ollama.pdf, id=1113, 180.675pt x 180.675pt>
 File: logos/tech/ollama.pdf Graphic file (type pdf)
 <use logos/tech/ollama.pdf>
 Package pdftex.def Info: logos/tech/ollama.pdf  used on input line 342.
 (pdftex.def)             Requested size: 19.34499pt x 19.34499pt.
-<logos/tech/vscode.pdf, id=1081, 501.875pt x 501.875pt>
+<logos/tech/vscode.pdf, id=1114, 501.875pt x 501.875pt>
 File: logos/tech/vscode.pdf Graphic file (type pdf)
 <use logos/tech/vscode.pdf>
 Package pdftex.def Info: logos/tech/vscode.pdf  used on input line 344.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-<logos/tech/pycharm.pdf, id=1082, 501.875pt x 501.875pt>
+<logos/tech/pycharm.pdf, id=1115, 501.875pt x 501.875pt>
 File: logos/tech/pycharm.pdf Graphic file (type pdf)
 <use logos/tech/pycharm.pdf>
 Package pdftex.def Info: logos/tech/pycharm.pdf  used on input line 346.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
-<logos/tech/git.pdf, id=1083, 501.875pt x 282.05376pt>
+<logos/tech/git.pdf, id=1116, 501.875pt x 282.05376pt>
 File: logos/tech/git.pdf Graphic file (type pdf)
 <use logos/tech/git.pdf>
 Package pdftex.def Info: logos/tech/git.pdf  used on input line 348.
 (pdftex.def)             Requested size: 19.34407pt x 10.87137pt.
-<logos/tech/github.pdf, id=1084, 501.875pt x 501.875pt>
+<logos/tech/github.pdf, id=1117, 501.875pt x 501.875pt>
 File: logos/tech/github.pdf Graphic file (type pdf)
 <use logos/tech/github.pdf>
 Package pdftex.def Info: logos/tech/github.pdf  used on input line 350.
 (pdftex.def)             Requested size: 19.34407pt x 19.34407pt.
- [17 <./logos/tech/sqlalchemy.pdf> <./logos/tech/fastapi.pdf> <./logos/tech/pos
+ [18 <./logos/tech/sqlalchemy.pdf> <./logos/tech/fastapi.pdf> <./logos/tech/pos
 tgresql.pdf> <./logos/tech/redis.pdf> <./logos/tech/mysql.pdf> <./logos/tech/re
 send.pdf> <./logos/tech/docker.pdf> <./logos/tech/react.pdf>])
-(chapters/04-system-analysis-and-design.tex [18 <./logos/tech/tailwindcss.pdf> 
+(chapters/04-system-analysis-and-design.tex [19 <./logos/tech/tailwindcss.pdf> 
 <./logos/tech/shadcn-ui.pdf> <./logos/tech/tanstack.pdf> <./logos/tech/langgrap
 h.pdf> <./logos/tech/langchain.pdf> <./logos/tech/ollama.pdf> <./logos/tech/vsc
 ode.pdf> <./logos/tech/pycharm.pdf> <./logos/tech/git.pdf> <./logos/tech/github
@@ -1130,348 +1130,352 @@ Chapter 2.
 
 \openout4 = `main.mtc'.
 
-(main.mtc6) [19
+(main.mtc6) [20
 
-] [20
+] [21
 
 ]
-<diagrams/ch2-use-case-diagram.png, id=1197, 451.6875pt x 692.5875pt>
+<diagrams/ch2-use-case-diagram.png, id=1240, 451.6875pt x 692.5875pt>
 File: diagrams/ch2-use-case-diagram.png Graphic file (type png)
 <use diagrams/ch2-use-case-diagram.png>
 Package pdftex.def Info: diagrams/ch2-use-case-diagram.png  used on input line 
-32.
+70.
 (pdftex.def)             Requested size: 359.25525pt x 550.85806pt.
- [21 <./diagrams/ch2-use-case-diagram.png>] [22]
-<diagrams/ch2-biotime-selected-tables.png, id=1209, 1010.77625pt x 973.6375pt>
+ [22] [23 <./diagrams/ch2-use-case-diagram.png>] [24]
+<diagrams/ch2-biotime-selected-tables.png, id=1257, 1010.77625pt x 973.6375pt>
 File: diagrams/ch2-biotime-selected-tables.png Graphic file (type png)
 <use diagrams/ch2-biotime-selected-tables.png>
 Package pdftex.def Info: diagrams/ch2-biotime-selected-tables.png  used on inpu
-t line 95.
+t line 132.
 (pdftex.def)             Requested size: 471.77975pt x 454.44525pt.
- [23 <./diagrams/ch2-biotime-selected-tables.png>]
-<diagrams/ch2-easyproject-selected-tables.png, id=1217, 912.40875pt x 997.7275p
+
+[25 <./diagrams/ch2-biotime-selected-tables.png>]
+<diagrams/ch2-easyproject-selected-tables.png, id=1265, 912.40875pt x 997.7275p
 t>
 File: diagrams/ch2-easyproject-selected-tables.png Graphic file (type png)
 <use diagrams/ch2-easyproject-selected-tables.png>
 Package pdftex.def Info: diagrams/ch2-easyproject-selected-tables.png  used on 
-input line 118.
+input line 155.
 (pdftex.def)             Requested size: 415.57822pt x 454.43866pt.
- [24
+ [26
 
  <./diagrams/ch2-easyproject-selected-tables.png>]
-<diagrams/ch2-biotime-created-views.png, id=1226, 852.18375pt x 656.4525pt>
+<diagrams/ch2-biotime-created-views.png, id=1273, 852.18375pt x 656.4525pt>
 File: diagrams/ch2-biotime-created-views.png Graphic file (type png)
 <use diagrams/ch2-biotime-created-views.png>
 Package pdftex.def Info: diagrams/ch2-biotime-created-views.png  used on input 
-line 145.
+line 181.
 (pdftex.def)             Requested size: 478.01283pt x 368.22191pt.
- [25
+ [27
 
  <./diagrams/ch2-biotime-created-views.png>]
-<diagrams/ch2-easyproject-created-views.png, id=1234, 662.475pt x 591.20876pt>
+<diagrams/ch2-easyproject-created-views.png, id=1281, 662.475pt x 591.20876pt>
 File: diagrams/ch2-easyproject-created-views.png Graphic file (type png)
 <use diagrams/ch2-easyproject-created-views.png>
 Package pdftex.def Info: diagrams/ch2-easyproject-created-views.png  used on in
-put line 168.
+put line 204.
 (pdftex.def)             Requested size: 478.01271pt x 426.59013pt.
- [26
 
- <./diagrams/ch2-easyproject-created-views.png>]
-<diagrams/ch2-main-app-diagram.png, id=1242, 1441.385pt x 1120.185pt>
+[28
+
+ <./diagrams/ch2-easyproject-created-views.png>] [29
+
+]
+<diagrams/ch2-main-app-diagram.png, id=1293, 1468.48625pt x 1180.41pt>
 File: diagrams/ch2-main-app-diagram.png Graphic file (type png)
 <use diagrams/ch2-main-app-diagram.png>
 Package pdftex.def Info: diagrams/ch2-main-app-diagram.png  used on input line 
-195.
-(pdftex.def)             Requested size: 487.95302pt x 379.21696pt.
- [27
-
- <./diagrams/ch2-main-app-diagram.png>]
-<diagrams/ch2-global-system-architecture.png, id=1250, 3398.6975pt x 4372.335pt
+233.
+(pdftex.def)             Requested size: 487.96306pt x 392.23825pt.
+ [30 <./diagrams/ch2-main-app-diagram.png>]
+<diagrams/ch2-global-system-architecture.png, id=1302, 3398.6975pt x 4372.335pt
 >
 File: diagrams/ch2-global-system-architecture.png Graphic file (type png)
 <use diagrams/ch2-global-system-architecture.png>
 Package pdftex.def Info: diagrams/ch2-global-system-architecture.png  used on i
-nput line 226.
+nput line 263.
 (pdftex.def)             Requested size: 385.31892pt x 495.70267pt.
-) [28
+ [31
 
- <./diagrams/ch2-global-system-architecture.png>]
-(chapters/05-etl-and-unified-database.tex [29]
+ <./diagrams/ch2-global-system-architecture.png>])
+(chapters/05-etl-and-unified-database.tex [32
+
+]
 Chapter 3.
 \openout4 = `main.mtc'.
 
 \openout4 = `main.mtc'.
 
-(main.mtc7) [30
+(main.mtc7) [33
 
-] [31
+] [34
 
 ]
-<diagrams/ch3-modular-etl-architecture.png, id=1293, 1059.96pt x 529.98pt>
+<diagrams/ch3-modular-etl-architecture.png, id=1344, 1059.96pt x 529.98pt>
 File: diagrams/ch3-modular-etl-architecture.png Graphic file (type png)
 <use diagrams/ch3-modular-etl-architecture.png>
 Package pdftex.def Info: diagrams/ch3-modular-etl-architecture.png  used on inp
 ut line 77.
 (pdftex.def)             Requested size: 458.08675pt x 229.04337pt.
- [32]
+ [35]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
 6.
 
 (C:\Users\admin\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<diagrams/ch3-main-pipeline-sequence.png, id=1300, 1059.96pt x 526.96875pt>
+<diagrams/ch3-main-pipeline-sequence.png, id=1351, 1059.96pt x 526.96875pt>
 File: diagrams/ch3-main-pipeline-sequence.png Graphic file (type png)
 <use diagrams/ch3-main-pipeline-sequence.png>
 Package pdftex.def Info: diagrams/ch3-main-pipeline-sequence.png  used on input
  line 107.
 (pdftex.def)             Requested size: 458.08675pt x 227.74199pt.
- [33{C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.
+ [36{C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.
 enc} <./diagrams/ch3-modular-etl-architecture.png> <./diagrams/ch3-main-pipelin
 e-sequence.png>]
-<diagrams/ch3-validation-control-flow.png, id=1314, 2455.1725pt x 2194.1975pt>
+<diagrams/ch3-validation-control-flow.png, id=1366, 2455.1725pt x 2194.1975pt>
 File: diagrams/ch3-validation-control-flow.png Graphic file (type png)
 <use diagrams/ch3-validation-control-flow.png>
 Package pdftex.def Info: diagrams/ch3-validation-control-flow.png  used on inpu
 t line 168.
 (pdftex.def)             Requested size: 369.79596pt x 330.48813pt.
- [34]) [35 <./diagrams/ch3-validation-control-flow.png>]
-(chapters/06-authentication-module.tex [36]
+ [37]) [38 <./diagrams/ch3-validation-control-flow.png>]
+(chapters/06-authentication-module.tex [39]
 Chapter 4.
 \openout4 = `main.mtc'.
 
 \openout4 = `main.mtc'.
 
-(main.mtc8) [37
+(main.mtc8) [40
 
-] [38
+] [41
 
 ]
-<diagrams/auth/auth-use-case-refinement.png, id=1369, 1254.6875pt x 1344.02126p
+<diagrams/auth/auth-use-case-refinement.png, id=1420, 1254.6875pt x 1344.02126p
 t>
 File: diagrams/auth/auth-use-case-refinement.png Graphic file (type png)
 <use diagrams/auth/auth-use-case-refinement.png>
 Package pdftex.def Info: diagrams/auth/auth-use-case-refinement.png  used on in
 put line 87.
 (pdftex.def)             Requested size: 462.81038pt x 495.76248pt.
- [39] [40 <./diagrams/auth/auth-use-case-refinement.png>]
-<diagrams/ch2-auth-login-flow.png, id=1385, 804.00375pt x 643.40375pt>
+ [42] [43 <./diagrams/auth/auth-use-case-refinement.png>]
+<diagrams/ch2-auth-login-flow.png, id=1437, 804.00375pt x 643.40375pt>
 File: diagrams/ch2-auth-login-flow.png Graphic file (type png)
 <use diagrams/ch2-auth-login-flow.png>
 Package pdftex.def Info: diagrams/ch2-auth-login-flow.png  used on input line 1
 22.
 (pdftex.def)             Requested size: 447.44191pt x 358.06525pt.
 
-[41
+[44
 
  <./diagrams/ch2-auth-login-flow.png>]
-<diagrams/ch2-auth-protected-route-flow.png, id=1400, 429.605pt x 353.32pt>
+<diagrams/ch2-auth-protected-route-flow.png, id=1452, 429.605pt x 353.32pt>
 File: diagrams/ch2-auth-protected-route-flow.png Graphic file (type png)
 <use diagrams/ch2-auth-protected-route-flow.png>
 Package pdftex.def Info: diagrams/ch2-auth-protected-route-flow.png  used on in
 put line 145.
 (pdftex.def)             Requested size: 435.36598pt x 358.05801pt.
- [42 <./diagrams/ch2-auth-protected-route-flow.png>]
-<diagrams/ch2-auth-token-expiration-flow.png, id=1408, 409.53pt x 469.755pt>
+ [45 <./diagrams/ch2-auth-protected-route-flow.png>]
+<diagrams/ch2-auth-token-expiration-flow.png, id=1459, 409.53pt x 469.755pt>
 File: diagrams/ch2-auth-token-expiration-flow.png Graphic file (type png)
 <use diagrams/ch2-auth-token-expiration-flow.png>
 Package pdftex.def Info: diagrams/ch2-auth-token-expiration-flow.png  used on i
 nput line 168.
 (pdftex.def)             Requested size: 312.14587pt x 358.04968pt.
- [43 <./diagrams/ch2-auth-token-expiration-flow.png>]
-<diagrams/ch2-auth-logout-flow.png, id=1415, 378.41376pt x 369.38pt>
+ [46 <./diagrams/ch2-auth-token-expiration-flow.png>]
+<diagrams/ch2-auth-logout-flow.png, id=1466, 378.41376pt x 369.38pt>
 File: diagrams/ch2-auth-logout-flow.png Graphic file (type png)
 <use diagrams/ch2-auth-logout-flow.png>
 Package pdftex.def Info: diagrams/ch2-auth-logout-flow.png  used on input line 
 191.
 (pdftex.def)             Requested size: 366.8126pt x 358.0558pt.
-<assets/auth/auth-login-screen.png, id=1417, 4103.33pt x 2078.76625pt>
+<assets/auth/auth-login-screen.png, id=1468, 4103.33pt x 2078.76625pt>
 File: assets/auth/auth-login-screen.png Graphic file (type png)
 <use assets/auth/auth-login-screen.png>
 Package pdftex.def Info: assets/auth/auth-login-screen.png  used on input line 
 215.
 (pdftex.def)             Requested size: 458.06715pt x 232.05896pt.
- [44 <./diagrams/ch2-auth-logout-flow.png>]
-<assets/auth/admin-otp-screen.png, id=1425, 1443.89438pt x 718.18312pt>
+ [47 <./diagrams/ch2-auth-logout-flow.png>]
+<assets/auth/admin-otp-screen.png, id=1476, 1443.89438pt x 718.18312pt>
 File: assets/auth/admin-otp-screen.png Graphic file (type png)
 <use assets/auth/admin-otp-screen.png>
 Package pdftex.def Info: assets/auth/admin-otp-screen.png  used on input line 2
 38.
 (pdftex.def)             Requested size: 458.08987pt x 227.85074pt.
- [45 <./assets/auth/auth-login-screen.png> <./assets/auth/admin-otp-screen.png>
+ [48 <./assets/auth/auth-login-screen.png> <./assets/auth/admin-otp-screen.png>
 ]
-<assets/auth/auth-register-screen.png, id=1434, 4045.1125pt x 2038.61626pt>
+<assets/auth/auth-register-screen.png, id=1486, 4045.1125pt x 2038.61626pt>
 File: assets/auth/auth-register-screen.png Graphic file (type png)
 <use assets/auth/auth-register-screen.png>
 Package pdftex.def Info: assets/auth/auth-register-screen.png  used on input li
 ne 261.
 (pdftex.def)             Requested size: 458.04912pt x 230.84311pt.
-<assets/auth/admin-approve-account.png, id=1436, 4396.425pt x 2231.33624pt>
+<assets/auth/admin-approve-account.png, id=1488, 4396.425pt x 2231.33624pt>
 File: assets/auth/admin-approve-account.png Graphic file (type png)
 <use assets/auth/admin-approve-account.png>
 Package pdftex.def Info: assets/auth/admin-approve-account.png  used on input l
 ine 284.
 (pdftex.def)             Requested size: 458.04927pt x 232.47568pt.
-<assets/auth/account-approval-email.png, id=1438, 3495.0575pt x 1836.8625pt>
+<assets/auth/account-approval-email.png, id=1490, 3495.0575pt x 1836.8625pt>
 File: assets/auth/account-approval-email.png Graphic file (type png)
 <use assets/auth/account-approval-email.png>
 Package pdftex.def Info: assets/auth/account-approval-email.png  used on input 
 line 307.
 (pdftex.def)             Requested size: 458.0532pt x 240.73445pt.
- [46 <./assets/auth/auth-register-screen.png> <./assets/auth/admin-approve-acco
-unt.png>]) [47 <./assets/auth/account-approval-email.png>] (chapters/07-adminis
-tration-module.tex [48]
+ [49 <./assets/auth/auth-register-screen.png> <./assets/auth/admin-approve-acco
+unt.png>]) [50 <./assets/auth/account-approval-email.png>] (chapters/07-adminis
+tration-module.tex [51]
 Chapter 5.
 \openout4 = `main.mtc'.
 
 \openout4 = `main.mtc'.
 
-(main.mtc9) [49
+(main.mtc9) [52
 
 ]
-<assets/admin/dashboard-module-design-mockup.jpg, id=1492, 1204.5pt x 596.2275p
+<assets/admin/dashboard-module-design-mockup.jpg, id=1543, 1204.5pt x 596.2275p
 t>
 File: assets/admin/dashboard-module-design-mockup.jpg Graphic file (type jpg)
 <use assets/admin/dashboard-module-design-mockup.jpg>
 Package pdftex.def Info: assets/admin/dashboard-module-design-mockup.jpg  used 
 on input line 47.
 (pdftex.def)             Requested size: 458.08234pt x 226.75075pt.
- [50
+ [53
 
 ]
-<assets/admin/projects-module-design-mockup.jpg, id=1497, 1204.5pt x 410.53375p
+<assets/admin/projects-module-design-mockup.jpg, id=1548, 1204.5pt x 410.53375p
 t>
 File: assets/admin/projects-module-design-mockup.jpg Graphic file (type jpg)
 <use assets/admin/projects-module-design-mockup.jpg>
 Package pdftex.def Info: assets/admin/projects-module-design-mockup.jpg  used o
 n input line 67.
 (pdftex.def)             Requested size: 458.08234pt x 156.12973pt.
-<diagrams/ch5-admin-use-case.jpg, id=1498, 1043.9pt x 1545.775pt>
+<diagrams/ch5-admin-use-case.jpg, id=1549, 1043.9pt x 1545.775pt>
 File: diagrams/ch5-admin-use-case.jpg Graphic file (type jpg)
 <use diagrams/ch5-admin-use-case.jpg>
 Package pdftex.def Info: diagrams/ch5-admin-use-case.jpg  used on input line 88
 .
 (pdftex.def)             Requested size: 241.79631pt x 358.04454pt.
- [51 <./assets/admin/dashboard-module-design-mockup.jpg> <./assets/admin/projec
+ [54 <./assets/admin/dashboard-module-design-mockup.jpg> <./assets/admin/projec
 ts-module-design-mockup.jpg>]
-<assets/admin/dashboard-users.jpg, id=1506, 1204.5pt x 609.27625pt>
+<assets/admin/dashboard-users.jpg, id=1558, 1204.5pt x 609.27625pt>
 File: assets/admin/dashboard-users.jpg Graphic file (type jpg)
 <use assets/admin/dashboard-users.jpg>
 Package pdftex.def Info: assets/admin/dashboard-users.jpg  used on input line 1
 18.
 (pdftex.def)             Requested size: 458.08234pt x 231.7133pt.
- [52 <./diagrams/ch5-admin-use-case.jpg>]
-<assets/admin/projects-page.jpg, id=1513, 1204.5pt x 609.27625pt>
+ [55 <./diagrams/ch5-admin-use-case.jpg>]
+<assets/admin/projects-page.jpg, id=1565, 1204.5pt x 609.27625pt>
 File: assets/admin/projects-page.jpg Graphic file (type jpg)
 <use assets/admin/projects-page.jpg>
 Package pdftex.def Info: assets/admin/projects-page.jpg  used on input line 137
 .
 (pdftex.def)             Requested size: 458.08234pt x 231.7133pt.
-<assets/admin/assign-project-page.jpg, id=1515, 1204.5pt x 605.26125pt>
+<assets/admin/assign-project-page.jpg, id=1567, 1204.5pt x 605.26125pt>
 File: assets/admin/assign-project-page.jpg Graphic file (type jpg)
 <use assets/admin/assign-project-page.jpg>
 Package pdftex.def Info: assets/admin/assign-project-page.jpg  used on input li
 ne 156.
 (pdftex.def)             Requested size: 458.08234pt x 230.18637pt.
- [53 <./assets/admin/dashboard-users.jpg> <./assets/admin/projects-page.jpg>]
-<assets/admin/settings-page.jpg, id=1523, 1204.5pt x 610.28pt>
+ [56 <./assets/admin/dashboard-users.jpg> <./assets/admin/projects-page.jpg>]
+<assets/admin/settings-page.jpg, id=1575, 1204.5pt x 610.28pt>
 File: assets/admin/settings-page.jpg Graphic file (type jpg)
 <use assets/admin/settings-page.jpg>
 Package pdftex.def Info: assets/admin/settings-page.jpg  used on input line 175
 .
 (pdftex.def)             Requested size: 458.08234pt x 232.09505pt.
-<assets/admin/table-filters-pagination.jpg, id=1525, 1204.5pt x 355.3275pt>
+<assets/admin/table-filters-pagination.jpg, id=1577, 1204.5pt x 355.3275pt>
 File: assets/admin/table-filters-pagination.jpg Graphic file (type jpg)
 <use assets/admin/table-filters-pagination.jpg>
 Package pdftex.def Info: assets/admin/table-filters-pagination.jpg  used on inp
 ut line 194.
 (pdftex.def)             Requested size: 458.08234pt x 135.13428pt.
- [54 <./assets/admin/assign-project-page.jpg> <./assets/admin/settings-page.jpg
->]) (chapters/08-hr-functional-modules.tex [55 <./assets/admin/table-filters-pa
+ [57 <./assets/admin/assign-project-page.jpg> <./assets/admin/settings-page.jpg
+>]) (chapters/08-hr-functional-modules.tex [58 <./assets/admin/table-filters-pa
 gination.jpg>]
 Chapter 6.
 \openout4 = `main.mtc'.
 
 \openout4 = `main.mtc'.
 
-(main.mtc10) [56
+(main.mtc10) [59
 
 ]
-<assets/rh/employees-page-design-mockup.jpg, id=1571, 1204.5pt x 596.2275pt>
+<assets/rh/employees-page-design-mockup.jpg, id=1622, 1204.5pt x 596.2275pt>
 File: assets/rh/employees-page-design-mockup.jpg Graphic file (type jpg)
 <use assets/rh/employees-page-design-mockup.jpg>
 Package pdftex.def Info: assets/rh/employees-page-design-mockup.jpg  used on in
 put line 49.
 (pdftex.def)             Requested size: 458.08234pt x 226.75075pt.
- [57
+ [60
 
 ]
-<assets/rh/checkinout-page-design-mockup.jpg, id=1576, 1204.5pt x 596.2275pt>
+<assets/rh/checkinout-page-design-mockup.jpg, id=1628, 1204.5pt x 596.2275pt>
 File: assets/rh/checkinout-page-design-mockup.jpg Graphic file (type jpg)
 <use assets/rh/checkinout-page-design-mockup.jpg>
 Package pdftex.def Info: assets/rh/checkinout-page-design-mockup.jpg  used on i
 nput line 69.
 (pdftex.def)             Requested size: 458.08234pt x 226.75075pt.
-<assets/rh/employee-leave-page-design-mockup.jpg, id=1577, 1204.5pt x 590.205pt
+<assets/rh/employee-leave-page-design-mockup.jpg, id=1629, 1204.5pt x 590.205pt
 >
 File: assets/rh/employee-leave-page-design-mockup.jpg Graphic file (type jpg)
 <use assets/rh/employee-leave-page-design-mockup.jpg>
 Package pdftex.def Info: assets/rh/employee-leave-page-design-mockup.jpg  used 
 on input line 89.
 (pdftex.def)             Requested size: 458.08234pt x 224.46034pt.
- [58 <./assets/rh/employees-page-design-mockup.jpg> <./assets/rh/checkinout-pag
+ [61 <./assets/rh/employees-page-design-mockup.jpg> <./assets/rh/checkinout-pag
 e-design-mockup.jpg>]
-<diagrams/ch6-hr-use-case.jpg, id=1584, 1226.5825pt x 1244.65pt>
+<diagrams/ch6-hr-use-case.jpg, id=1636, 1226.5825pt x 1244.65pt>
 File: diagrams/ch6-hr-use-case.jpg Graphic file (type jpg)
 <use diagrams/ch6-hr-use-case.jpg>
 Package pdftex.def Info: diagrams/ch6-hr-use-case.jpg  used on input line 110.
 (pdftex.def)             Requested size: 352.85497pt x 358.0525pt.
- [59 <./assets/rh/employee-leave-page-design-mockup.jpg>]
-<assets/rh/employees-page.jpg, id=1591, 1204.5pt x 582.175pt>
+ [62 <./assets/rh/employee-leave-page-design-mockup.jpg>]
+<assets/rh/employees-page.jpg, id=1643, 1204.5pt x 582.175pt>
 File: assets/rh/employees-page.jpg Graphic file (type jpg)
 <use assets/rh/employees-page.jpg>
 Package pdftex.def Info: assets/rh/employees-page.jpg  used on input line 139.
 (pdftex.def)             Requested size: 458.08234pt x 221.40646pt.
- [60 <./diagrams/ch6-hr-use-case.jpg>]
-<assets/rh/checkinout-page.jpg, id=1600, 1204.5pt x 581.17125pt>
+ [63 <./diagrams/ch6-hr-use-case.jpg>]
+<assets/rh/checkinout-page.jpg, id=1651, 1204.5pt x 581.17125pt>
 File: assets/rh/checkinout-page.jpg Graphic file (type jpg)
 <use assets/rh/checkinout-page.jpg>
 Package pdftex.def Info: assets/rh/checkinout-page.jpg  used on input line 158.
 
 (pdftex.def)             Requested size: 458.08234pt x 221.02472pt.
-<assets/rh/employee-leave-page.jpg, id=1602, 1204.5pt x 583.17876pt>
+<assets/rh/employee-leave-page.jpg, id=1653, 1204.5pt x 583.17876pt>
 File: assets/rh/employee-leave-page.jpg Graphic file (type jpg)
 <use assets/rh/employee-leave-page.jpg>
 Package pdftex.def Info: assets/rh/employee-leave-page.jpg  used on input line 
 177.
 (pdftex.def)             Requested size: 458.08234pt x 221.7882pt.
- [61 <./assets/rh/employees-page.jpg> <./assets/rh/checkinout-page.jpg>])
-(chapters/09-project-manager-modules.tex [62 <./assets/rh/employee-leave-page.j
+ [64 <./assets/rh/employees-page.jpg> <./assets/rh/checkinout-page.jpg>])
+(chapters/09-project-manager-modules.tex [65 <./assets/rh/employee-leave-page.j
 pg>]
 Chapter 7.
 \openout4 = `main.mtc'.
 
 \openout4 = `main.mtc'.
 
-(main.mtc11) [63
+(main.mtc11) [66
 
 ]
-<assets/pm/projects-page-design-mockup.jpg, id=1647, 1204.5pt x 596.2275pt>
+<assets/pm/projects-page-design-mockup.jpg, id=1699, 1204.5pt x 596.2275pt>
 File: assets/pm/projects-page-design-mockup.jpg Graphic file (type jpg)
 <use assets/pm/projects-page-design-mockup.jpg>
 Package pdftex.def Info: assets/pm/projects-page-design-mockup.jpg  used on inp
 ut line 44.
 (pdftex.def)             Requested size: 458.08234pt x 226.75075pt.
- [64
+ [67
 
 ]
-<assets/pm/members-page-design-mockup.jpg, id=1652, 1204.5pt x 596.2275pt>
+<assets/pm/members-page-design-mockup.jpg, id=1704, 1204.5pt x 596.2275pt>
 File: assets/pm/members-page-design-mockup.jpg Graphic file (type jpg)
 <use assets/pm/members-page-design-mockup.jpg>
 Package pdftex.def Info: assets/pm/members-page-design-mockup.jpg  used on inpu
 t line 64.
 (pdftex.def)             Requested size: 458.08234pt x 226.75075pt.
-<assets/pm/members-attendance-page-design-mockup.jpg, id=1653, 1204.5pt x 596.2
+<assets/pm/members-attendance-page-design-mockup.jpg, id=1705, 1204.5pt x 596.2
 275pt>
 File: assets/pm/members-attendance-page-design-mockup.jpg Graphic file (type jp
 g)
@@ -1479,68 +1483,68 @@ g)
 Package pdftex.def Info: assets/pm/members-attendance-page-design-mockup.jpg  u
 sed on input line 84.
 (pdftex.def)             Requested size: 458.08234pt x 226.75075pt.
- [65 <./assets/pm/projects-page-design-mockup.jpg> <./assets/pm/members-page-de
+ [68 <./assets/pm/projects-page-design-mockup.jpg> <./assets/pm/members-page-de
 sign-mockup.jpg>]
-<diagrams/ch7-pm-use-case.jpg, id=1660, 1441.385pt x 943.525pt>
+<diagrams/ch7-pm-use-case.jpg, id=1712, 1441.385pt x 943.525pt>
 File: diagrams/ch7-pm-use-case.jpg Graphic file (type jpg)
 <use diagrams/ch7-pm-use-case.jpg>
 Package pdftex.def Info: diagrams/ch7-pm-use-case.jpg  used on input line 105.
 (pdftex.def)             Requested size: 458.08553pt x 299.861pt.
- [66 <./assets/pm/members-attendance-page-design-mockup.jpg>]
-<assets/pm/projects-page.jpg, id=1668, 1204.5pt x 580.1675pt>
+ [69 <./assets/pm/members-attendance-page-design-mockup.jpg>]
+<assets/pm/projects-page.jpg, id=1719, 1204.5pt x 580.1675pt>
 File: assets/pm/projects-page.jpg Graphic file (type jpg)
 <use assets/pm/projects-page.jpg>
 Package pdftex.def Info: assets/pm/projects-page.jpg  used on input line 133.
 (pdftex.def)             Requested size: 458.08234pt x 220.64297pt.
- [67 <./diagrams/ch7-pm-use-case.jpg>]
-<assets/pm/members-page.jpg, id=1675, 1204.5pt x 581.17125pt>
+ [70 <./diagrams/ch7-pm-use-case.jpg>]
+<assets/pm/members-page.jpg, id=1726, 1204.5pt x 581.17125pt>
 File: assets/pm/members-page.jpg Graphic file (type jpg)
 <use assets/pm/members-page.jpg>
 Package pdftex.def Info: assets/pm/members-page.jpg  used on input line 152.
 (pdftex.def)             Requested size: 458.08234pt x 221.02472pt.
-<assets/pm/members-attendance-page.jpg, id=1677, 1204.5pt x 583.17876pt>
+<assets/pm/members-attendance-page.jpg, id=1728, 1204.5pt x 583.17876pt>
 File: assets/pm/members-attendance-page.jpg Graphic file (type jpg)
 <use assets/pm/members-attendance-page.jpg>
 Package pdftex.def Info: assets/pm/members-attendance-page.jpg  used on input l
 ine 171.
 (pdftex.def)             Requested size: 458.08234pt x 221.7882pt.
- [68 <./assets/pm/projects-page.jpg> <./assets/pm/members-page.jpg>])
-(chapters/10-rh-agent-integration.tex [69 <./assets/pm/members-attendance-page.
+ [71 <./assets/pm/projects-page.jpg> <./assets/pm/members-page.jpg>])
+(chapters/10-rh-agent-integration.tex [72 <./assets/pm/members-attendance-page.
 jpg>]
 Chapter 8.
 \openout4 = `main.mtc'.
 
 \openout4 = `main.mtc'.
 
-(main.mtc12) [70
+(main.mtc12) [73
 
-] [71
+] [74
 
 ]
-<assets/rh/rh-agent-flow.jpg, id=1723, 5802.67876pt x 8953.45pt>
+<assets/rh/rh-agent-flow.jpg, id=1775, 5802.67876pt x 8953.45pt>
 File: assets/rh/rh-agent-flow.jpg Graphic file (type jpg)
 <use assets/rh/rh-agent-flow.jpg>
 Package pdftex.def Info: assets/rh/rh-agent-flow.jpg  used on input line 52.
 (pdftex.def)             Requested size: 258.80719pt x 399.33578pt.
- [72 <./assets/rh/rh-agent-flow.jpg>]
-<diagrams/rh-agent/rh-agent-sequence-diagram.jpg, id=1732, 1401.235pt x 1548.78
+ [75 <./assets/rh/rh-agent-flow.jpg>]
+<diagrams/rh-agent/rh-agent-sequence-diagram.jpg, id=1783, 1401.235pt x 1548.78
 625pt>
 File: diagrams/rh-agent/rh-agent-sequence-diagram.jpg Graphic file (type jpg)
 <use diagrams/rh-agent/rh-agent-sequence-diagram.jpg>
 Package pdftex.def Info: diagrams/rh-agent/rh-agent-sequence-diagram.jpg  used 
 on input line 77.
 (pdftex.def)             Requested size: 460.97646pt x 509.51767pt.
- [73 <./diagrams/rh-agent/rh-agent-sequence-diagram.jpg>] [74]
-<assets/rh-agent/rh-agent-interface.jpg, id=1744, 4396.425pt x 2213.26875pt>
+ [76 <./diagrams/rh-agent/rh-agent-sequence-diagram.jpg>] [77]
+<assets/rh-agent/rh-agent-interface.jpg, id=1795, 4396.425pt x 2213.26875pt>
 File: assets/rh-agent/rh-agent-interface.jpg Graphic file (type jpg)
 <use assets/rh-agent/rh-agent-interface.jpg>
 Package pdftex.def Info: assets/rh-agent/rh-agent-interface.jpg  used on input 
 line 132.
 (pdftex.def)             Requested size: 458.04927pt x 230.59329pt.
 ) (chapters/11-references.tex
-[75 <./assets/rh-agent/rh-agent-interface.jpg>] [76
+[78 <./assets/rh-agent/rh-agent-interface.jpg>] [79
 
-] [77
+] [80
 
 ])
 Package minitoc Info: I0009
@@ -1559,19 +1563,19 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[78] (main.aux)
+[81] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DA1A349984C539C5FC3DAC1CBF6A61B6;20834.
+(rerunfilecheck)             Checksum: 8347E3144C092B972DFC26C51977A6EB;21660.
  ) 
 Here is how much of TeX's memory you used:
- 24570 strings out of 467867
- 466798 string characters out of 5418335
- 857243 words of memory out of 5000000
- 52702 multiletter control sequences out of 15000+600000
+ 24582 strings out of 467867
+ 466973 string characters out of 5418335
+ 857247 words of memory out of 5000000
+ 52707 multiletter control sequences out of 15000+600000
  704149 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,104p,814b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1583,9 +1587,9 @@ b><C:/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
 :/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C
 :/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C
 :/Users/admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (79 pages, 16169689 bytes).
+Output written on main.pdf (82 pages, 16164417 bytes).
 PDF statistics:
- 1940 PDF objects out of 2073 (max. 8388607)
- 291 named destinations out of 1000 (max. 500000)
- 1326 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1992 PDF objects out of 2073 (max. 8388607)
+ 298 named destinations out of 1000 (max. 500000)
+ 1366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
