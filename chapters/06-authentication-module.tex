@@ -1,10 +1,10 @@
-\chapter{Authentication Module}
+\chapter{Authentication and Access Control}
 \minitoc
 \clearpage
 \section{Introduction}
-The authentication module controls secure access and verifies user identity. It manages registration, login, administrator approval, and an extra OTP email check for Admin login.
+This chapter presents Sprint 2, focused on Authentication and Access Control. These features control secure access and verify user identity. They manage registration, login, administrator approval, and an extra OTP email check for Admin login.
 
-This module is designed to:
+These features are designed to:
 \begin{itemize}[noitemsep]
     \item Protect sensitive data.
     \item Restrict access to authorized users only.
@@ -14,28 +14,32 @@ This module is designed to:
 The authentication flow adds one extra validation step: newly registered users must be approved by an administrator before they can access the system.
 
 \section{Sprint Backlog}
-During this sprint, we selected and implemented the following user stories:
+During Sprint 2, we selected and implemented the following backlog items:
 
-\begin{center}
+\begin{table}[H]
+\centering
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{|l|>{\raggedright\arraybackslash}p{9.2cm}|l|}
 \hline
-\textbf{ID} & \textbf{User Story} & \textbf{Priority} \\
+\textbf{ID} & \textbf{Backlog Item} & \textbf{Priority} \\
 \hline
-US1 & As a user, I want to log in using my email and password. & High \\
+S2-BL-01 & Implement login using email and password credentials. & High \\
 \hline
-US2 & As a HR/Project Manager, I want to create an account. & High \\
+S2-BL-02 & Implement account registration for HR and Project Manager roles. & High \\
 \hline
-US3 & As an admin, I want to approve user accounts. & High \\
+S2-BL-03 & Implement administrator approval for newly registered user accounts. & High \\
 \hline
-US4 & As an admin, I want to receive an OTP code by email during login for extra verification. & High \\
+S2-BL-04 & Add email-based OTP verification during Administrator login. & High \\
 \hline
-US5 & As a user, I want to receive an email after approval. & Medium \\
+S2-BL-05 & Send an email notification after account approval. & Medium \\
 \hline
-US6 & As a system, I must prevent unapproved users from accessing the application. & High \\
+S2-BL-06 & Block application access for unapproved user accounts. & High \\
 \hline
 \end{tabular}
-\end{center}
+\caption{Sprint 2 backlog}
+\label{tab:sprint-2-backlog}
+{\footnotesize\textit{Source: Author's work.}}
+\end{table}
 
 \section{Sprint Design}
 \textbf{Login}
@@ -71,8 +75,6 @@ The authentication system is built around the following use cases:
 Figure~\ref{fig:auth-use-case-refinement} presents the refined authentication use cases and actor interactions used for sprint design decisions.
 
 \begin{figure}[H]
-\caption{Refined use case diagram for the authentication module}
-\label{fig:auth-use-case-refinement}
 \centering
 \IfFileExists{diagrams/auth/auth-use-case-refinement.png}{%
     \includegraphics[width=0.96\textwidth,height=0.72\textheight,keepaspectratio]{diagrams/auth/auth-use-case-refinement.png}
@@ -85,6 +87,8 @@ Figure~\ref{fig:auth-use-case-refinement} presents the refined authentication us
     \vspace{1.8cm}
     }}
 }
+\caption{Refined use case diagram for authentication and access control}
+\label{fig:auth-use-case-refinement}
 \end{figure}
 
 
@@ -106,8 +110,6 @@ Figure~\ref{fig:auth-login-flow} shows credential submission, validation, and to
 The user sends email and password to the authentication endpoint, where credentials and account status are checked before access is granted. If the user is an Admin, the system sends an OTP code to the admin email and waits for code validation before issuing access. When validation succeeds, the backend returns a JWT used for later API calls.
 
 \begin{figure}[H]
-\caption{Login flow showing JWT token issuance}
-\label{fig:auth-login-flow}
 \centering
 \IfFileExists{diagrams/ch2-auth-login-flow.png}{%
     \includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-login-flow.png}
@@ -120,6 +122,8 @@ The user sends email and password to the authentication endpoint, where credenti
     \vspace{1.8cm}
     }}
 }
+\caption{Login flow showing JWT token issuance}
+\label{fig:auth-login-flow}
 \end{figure}
 
 
@@ -129,8 +133,6 @@ Figure~\ref{fig:auth-protected-route-flow} explains token and role verification 
 For each protected request, middleware validates token signature and expiration, then extracts user identity and role claims. The endpoint runs only if RBAC permissions allow access to the requested resource.
 
 \begin{figure}[H]
-\caption{Protected route access with JWT verification}
-\label{fig:auth-protected-route-flow}
 \centering
 \IfFileExists{diagrams/ch2-auth-protected-route-flow.png}{%
     \includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-protected-route-flow.png}
@@ -143,6 +145,8 @@ For each protected request, middleware validates token signature and expiration,
     \vspace{1.8cm}
     }}
 }
+\caption{Protected route access with JWT verification}
+\label{fig:auth-protected-route-flow}
 \end{figure}
 
 
@@ -152,8 +156,6 @@ Figure~\ref{fig:auth-token-expiration-flow} describes session expiration and re-
 When the token lifetime ends, the API rejects the request with an unauthorized response and the client redirects the user to sign in again. This mechanism enforces short sessions and reduces risks linked to stale credentials.
 
 \begin{figure}[H]
-\caption{Token expiration and re-authentication flow}
-\label{fig:auth-token-expiration-flow}
 \centering
 \IfFileExists{diagrams/ch2-auth-token-expiration-flow.png}{%
     \includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-token-expiration-flow.png}
@@ -166,6 +168,8 @@ When the token lifetime ends, the API rejects the request with an unauthorized r
     \vspace{1.8cm}
     }}
 }
+\caption{Token expiration and re-authentication flow}
+\label{fig:auth-token-expiration-flow}
 \end{figure}
 
 
@@ -175,8 +179,6 @@ Figure~\ref{fig:auth-logout-flow} presents controlled session termination and to
 During logout, the client clears local authentication data and stops sending the previous token in future requests. Any later access to protected routes requires a new login and a newly issued token.
 
 \begin{figure}[H]
-\caption{Logout flow with token invalidation}
-\label{fig:auth-logout-flow}
 \centering
 \IfFileExists{diagrams/ch2-auth-logout-flow.png}{%
     \includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-logout-flow.png}
@@ -189,6 +191,8 @@ During logout, the client clears local authentication data and stops sending the
     \vspace{1.8cm}
     }}
 }
+\caption{Logout flow with token invalidation}
+\label{fig:auth-logout-flow}
 \end{figure}
 
 
@@ -199,8 +203,6 @@ The implemented authentication interface includes the login view, credential val
 Figure~\ref{fig:auth-login-ui} shows email/password authentication, user feedback on invalid credentials, and the Admin OTP verification step.
 
 \begin{figure}[H]
-\caption{Login interface of the application}
-\label{fig:auth-login-ui}
 \centering
 \IfFileExists{assets/auth/auth-login-screen.png}{%
     \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/auth-login-screen.png}
@@ -213,6 +215,8 @@ Figure~\ref{fig:auth-login-ui} shows email/password authentication, user feedbac
     \vspace{1.6cm}
     }}
 }
+\caption{Login interface of the application}
+\label{fig:auth-login-ui}
 \end{figure}
 
 
@@ -222,8 +226,6 @@ After entering valid login credentials, the Admin is asked to enter the OTP code
 Figure~\ref{fig:auth-admin-otp-ui} presents the extra verification step where the Admin enters the code received by email before access is granted.
 
 \begin{figure}[H]
-\caption{Administrator OTP verification interface}
-\label{fig:auth-admin-otp-ui}
 \centering
 \IfFileExists{assets/auth/admin-otp-screen.png}{%
     \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/admin-otp-screen.png}
@@ -236,6 +238,8 @@ Figure~\ref{fig:auth-admin-otp-ui} presents the extra verification step where th
     \vspace{1.6cm}
     }}
 }
+\caption{Administrator OTP verification interface}
+\label{fig:auth-admin-otp-ui}
 \end{figure}
 
 
@@ -245,8 +249,6 @@ The registration interface allows account creation for operational roles before 
 Figure~\ref{fig:auth-register-ui} presents account creation for HR and Project Manager roles with pending approval status.
 
 \begin{figure}[H]
-\caption{User registration interface}
-\label{fig:auth-register-ui}
 \centering
 \IfFileExists{assets/auth/auth-register-screen.png}{%
     \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/auth-register-screen.png}
@@ -259,6 +261,8 @@ Figure~\ref{fig:auth-register-ui} presents account creation for HR and Project M
     \vspace{1.6cm}
     }}
 }
+\caption{User registration interface}
+\label{fig:auth-register-ui}
 \end{figure}
 
 
@@ -268,8 +272,6 @@ After registration, accounts remain pending until administrator approval.
 Figure~\ref{fig:admin-approve-account-ui} shows the pending-user list and approval/rejection actions.
 
 \begin{figure}[H]
-\caption{Administrator page for account approval}
-\label{fig:admin-approve-account-ui}
 \centering
 \IfFileExists{assets/auth/admin-approve-account.png}{%
     \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/admin-approve-account.png}
@@ -282,6 +284,8 @@ Figure~\ref{fig:admin-approve-account-ui} shows the pending-user list and approv
     \vspace{1.6cm}
     }}
 }
+\caption{Administrator page for account approval}
+\label{fig:admin-approve-account-ui}
 \end{figure}
 
 
@@ -291,8 +295,6 @@ When an account is approved, the system sends an automatic activation email.
 Figure~\ref{fig:account-approval-email} confirms automated communication of account activation.
 
 \begin{figure}[H]
-\caption{Account approval email notification}
-\label{fig:account-approval-email}
 \centering
 \IfFileExists{assets/auth/account-approval-email.png}{%
     \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/account-approval-email.png}
@@ -305,6 +307,8 @@ Figure~\ref{fig:account-approval-email} confirms automated communication of acco
     \vspace{1.6cm}
     }}
 }
+\caption{Account approval email notification}
+\label{fig:account-approval-email}
 \end{figure}
 
 
@@ -317,9 +321,10 @@ The implemented logic provides explicit user feedback in critical cases:
 \end{itemize}
 
 \section{Security Considerations}
-The following security controls were applied in the authentication module:
+The following security controls were applied in Authentication and Access Control:
 
-\begin{center}
+\begin{table}[H]
+\centering
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{|l|>{\raggedright\arraybackslash}p{9.8cm}|}
 \hline
@@ -333,12 +338,15 @@ Secure error handling & Authentication errors do not expose sensitive system det
 \hline
 RBAC enforcement & Access to protected resources depends on verified user role permissions. \\
 \hline
-Approval-gated access & Users cannot access business modules unless account status is approved by the administrator. \\
+Approval-gated access & Users cannot access business features unless account status is approved by the administrator. \\
 \hline
 Admin OTP verification & Admin users must validate a one-time password sent by email before login is completed. \\
 \hline
 \end{tabular}
-\end{center}
+\caption{Authentication security controls}
+\label{tab:authentication-security-controls}
+{\footnotesize\textit{Source: Author's work.}}
+\end{table}
 
 \section{Conclusion}
-The authentication module ensures secure and controlled access to the application. With administrator approval, automatic email notification, and OTP verification for Admin users, the system adds an extra layer of protection for sensitive access.
+Authentication and Access Control ensures secure and controlled access to the application. With administrator approval, automatic email notification, and OTP verification for Admin users, the system adds an extra layer of protection for sensitive access.

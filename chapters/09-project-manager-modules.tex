@@ -1,89 +1,93 @@
-\chapter{Project Manager Modules}
+\chapter{Project Manager Supervision and Attendance Monitoring}
 \minitoc
 \clearpage
 \section{Introduction}
-This chapter presents the Project Manager modules, focused on project-scope supervision and manager-level operational monitoring. The Project Manager has access to three pages: \textbf{Projects}, \textbf{Members}, and \textbf{Members Attendance}. Access is strictly limited to projects assigned by the Administrator and members belonging to those projects.
+This chapter presents Sprint 5, focused on Project Manager Supervision and Attendance Monitoring. The Project Manager has access to three pages: \textbf{Projects}, \textbf{Members}, and \textbf{Members Attendance}. Access is strictly limited to projects assigned by the Administrator and members belonging to those projects.
 
 \section{Sprint Backlog}
-The sprint backlog prioritized project-management monitoring tasks.
-\begin{center}
-	\renewcommand{\arraystretch}{1.2}
-	\begin{tabular}{|l|>{\raggedright\arraybackslash}p{10.2cm}|l|}
-		\hline
-		\textbf{ID} & \textbf{Backlog Item} & \textbf{Priority} \\
-		\hline
-		PM-BL-01 & Implement the Projects page to list only Administrator-assigned projects. & High \\
-		\hline
-		PM-BL-02 & Implement the Members page to display members of assigned projects only. & High \\
-		\hline
-		PM-BL-03 & Implement the Members Attendance page to monitor attendance of assigned-project members. & High \\
-		\hline
-		PM-BL-04 & Execute module stabilization and end-to-end verification. & Medium \\
-		\hline
-	\end{tabular}
-\end{center}
+The Sprint 5 backlog prioritized project-management monitoring tasks.
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|>{\raggedright\arraybackslash}p{10.2cm}|l|}
+\hline
+\textbf{ID} & \textbf{Backlog Item} & \textbf{Priority} \\
+\hline
+S5-BL-01 & Implement the Projects page to list only Administrator-assigned projects. & High \\
+\hline
+S5-BL-02 & Implement the Members page to display members of assigned projects only. & High \\
+\hline
+S5-BL-03 & Implement the Members Attendance page to monitor attendance of assigned-project members. & High \\
+\hline
+S5-BL-04 & Execute workflow stabilization and end-to-end verification. & Medium \\
+\hline
+\end{tabular}
+\caption{Sprint 5 backlog}
+\label{tab:sprint-5-backlog}
+{\footnotesize\textit{Source: Author's work.}}
+\end{table}
 
 \section{Sprint Design}
-The sprint design centered on role-scoped visibility, operational clarity, and module interoperability.
+The sprint design centered on role-scoped visibility, operational clarity, and workflow interoperability.
 
 \subsection{Projects page design mockup}
 The Projects page mockup provides a clear, role-scoped list of projects assigned by the Administrator, allowing managers to quickly identify project context before exploring members and attendance details.
 
 \begin{figure}[H]
-	\centering
-	\IfFileExists{assets/pm/projects-page-design-mockup.jpg}{%
-		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/projects-page-design-mockup.jpg}
-	}{%
-		\fbox{\parbox{0.9\textwidth}{
-				\centering
-				\vspace{1.6cm}
-				\textit{Missing file: assets/pm/projects-page-design-mockup.jpg}\\
-				\textit{Insert Project Manager Projects page design mockup.}
-				\vspace{1.6cm}
-		}}
-	}
-	\caption{Project Manager Projects Page Design Mockup}
-	\label{fig:pm-projects-design-mockup}
+\centering
+\IfFileExists{assets/pm/projects-page-design-mockup.jpg}{%
+    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/projects-page-design-mockup.jpg}
+}{%
+    \fbox{\parbox{0.9\textwidth}{
+    \centering
+    \vspace{1.6cm}
+    \textit{Missing file: assets/pm/projects-page-design-mockup.jpg}\\
+    \textit{Insert Project Manager Projects page design mockup.}
+    \vspace{1.6cm}
+    }}
+}
+\caption{Project Manager Projects Page Design Mockup}
+\label{fig:pm-projects-design-mockup}
 \end{figure}
 
 \subsection{Members page design mockup}
 The Members page mockup shows members linked to the selected assigned project, with clear tabular visibility for team composition and quick project-level supervision.
 
 \begin{figure}[H]
-	\centering
-	\IfFileExists{assets/pm/members-page-design-mockup.jpg}{%
-		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/members-page-design-mockup.jpg}
-	}{%
-		\fbox{\parbox{0.9\textwidth}{
-				\centering
-				\vspace{1.6cm}
-				\textit{Missing file: assets/pm/members-page-design-mockup.jpg}\\
-				\textit{Insert Project Manager Members page design mockup.}
-				\vspace{1.6cm}
-		}}
-	}
-	\caption{Project Manager Members Page Design Mockup}
-	\label{fig:pm-members-design-mockup}
+\centering
+\IfFileExists{assets/pm/members-page-design-mockup.jpg}{%
+    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/members-page-design-mockup.jpg}
+}{%
+    \fbox{\parbox{0.9\textwidth}{
+    \centering
+    \vspace{1.6cm}
+    \textit{Missing file: assets/pm/members-page-design-mockup.jpg}\\
+    \textit{Insert Project Manager Members page design mockup.}
+    \vspace{1.6cm}
+    }}
+}
+\caption{Project Manager Members Page Design Mockup}
+\label{fig:pm-members-design-mockup}
 \end{figure}
 
 \subsection{Members Attendance page design mockup}
 The Members Attendance page mockup supports attendance follow-up on members of assigned projects only, with clear records for manager-level operational tracking.
 
 \begin{figure}[H]
-	\centering
-	\IfFileExists{assets/pm/members-attendance-page-design-mockup.jpg}{%
-		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/members-attendance-page-design-mockup.jpg}
-	}{%
-		\fbox{\parbox{0.9\textwidth}{
-				\centering
-				\vspace{1.6cm}
-				\textit{Missing file: assets/pm/members-attendance-page-design-mockup.jpg}\\
-				\textit{Insert Project Manager Members Attendance page design mockup.}
-				\vspace{1.6cm}
-		}}
-	}
-	\caption{Project Manager Members Attendance Page Design Mockup}
-	\label{fig:pm-members-attendance-design-mockup}
+\centering
+\IfFileExists{assets/pm/members-attendance-page-design-mockup.jpg}{%
+    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/members-attendance-page-design-mockup.jpg}
+}{%
+    \fbox{\parbox{0.9\textwidth}{
+    \centering
+    \vspace{1.6cm}
+    \textit{Missing file: assets/pm/members-attendance-page-design-mockup.jpg}\\
+    \textit{Insert Project Manager Members Attendance page design mockup.}
+    \vspace{1.6cm}
+    }}
+}
+\caption{Project Manager Members Attendance Page Design Mockup}
+\label{fig:pm-members-attendance-design-mockup}
 \end{figure}
 
 \section{Conception}
@@ -91,88 +95,88 @@ The Members Attendance page mockup supports attendance follow-up on members of a
 The Project Manager use case model captures role-scoped actions: consult assigned projects, view members of those projects, and monitor attendance for those members only.
 
 \begin{figure}[H]
-	\centering
-	\IfFileExists{diagrams/ch7-pm-use-case.jpg}{%
-		\includegraphics[width=0.92\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch7-pm-use-case.jpg}
-	}{%
-		\fbox{\parbox{0.9\textwidth}{
-				\centering
-				\vspace{1.6cm}
-				\textit{Missing file: diagrams/ch7-pm-use-case.jpg}\\
-				\textit{Insert Project Manager module use case diagram.}
-				\vspace{1.6cm}
-		}}
-	}
-	\caption{Project Manager Modules Use Case Diagram}
-	\label{fig:pm-use-case}
+\centering
+\IfFileExists{diagrams/ch7-pm-use-case.jpg}{%
+    \includegraphics[width=0.92\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch7-pm-use-case.jpg}
+}{%
+    \fbox{\parbox{0.9\textwidth}{
+    \centering
+    \vspace{1.6cm}
+    \textit{Missing file: diagrams/ch7-pm-use-case.jpg}\\
+    \textit{Insert Project Manager Supervision and Attendance Monitoring use case diagram.}
+    \vspace{1.6cm}
+    }}
+}
+\caption{Project Manager Supervision and Attendance Monitoring Use Case Diagram}
+\label{fig:pm-use-case}
 \end{figure}
 Figure~\ref{fig:pm-use-case} summarizes manager-level actions constrained to assigned projects.
 
 \section{Sprint Realization}
 \subsection{Implementation outcomes}
 \begin{itemize}[noitemsep]
-	\item Implemented the Projects page with visibility restricted to Administrator-assigned projects.
-	\item Implemented the Members page with members filtered by assigned projects.
-	\item Implemented the Members Attendance page with attendance records limited to assigned-project members.
-	\item Added tabular querying features for project-level supervision.
+    \item Implemented the Projects page with visibility restricted to Administrator-assigned projects.
+    \item Implemented the Members page with members filtered by assigned projects.
+    \item Implemented the Members Attendance page with attendance records limited to assigned-project members.
+    \item Added tabular querying features for project-level supervision.
 \end{itemize}
 
 \subsection{Projects page interface}
 \begin{figure}[H]
-	\centering
-	\IfFileExists{assets/pm/projects-page.jpg}{%
-		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/projects-page.jpg}
-	}{%
-		\fbox{\parbox{0.9\textwidth}{
-				\centering
-				\vspace{1.6cm}
-				\textit{Missing file: assets/pm/projects-page.jpg}\\
-				\textit{Insert Project Manager Projects page screenshot.}
-				\vspace{1.6cm}
-		}}
-	}
-	\caption{Project Manager Projects Page}
-	\label{fig:pm-projects-page}
+\centering
+\IfFileExists{assets/pm/projects-page.jpg}{%
+    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/projects-page.jpg}
+}{%
+    \fbox{\parbox{0.9\textwidth}{
+    \centering
+    \vspace{1.6cm}
+    \textit{Missing file: assets/pm/projects-page.jpg}\\
+    \textit{Insert Project Manager Projects page screenshot.}
+    \vspace{1.6cm}
+    }}
+}
+\caption{Project Manager Projects Page}
+\label{fig:pm-projects-page}
 \end{figure}
 Figure~\ref{fig:pm-projects-page} shows assigned-project consultation for manager scope.
 
 \subsection{Members page interface}
 \begin{figure}[H]
-	\centering
-	\IfFileExists{assets/pm/members-page.jpg}{%
-		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/members-page.jpg}
-	}{%
-		\fbox{\parbox{0.9\textwidth}{
-				\centering
-				\vspace{1.6cm}
-				\textit{Missing file: assets/pm/members-page.jpg}\\
-				\textit{Insert Project Manager Members page screenshot.}
-				\vspace{1.6cm}
-		}}
-	}
-	\caption{Project Manager Members Page}
-	\label{fig:pm-members-page}
+\centering
+\IfFileExists{assets/pm/members-page.jpg}{%
+    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/members-page.jpg}
+}{%
+    \fbox{\parbox{0.9\textwidth}{
+    \centering
+    \vspace{1.6cm}
+    \textit{Missing file: assets/pm/members-page.jpg}\\
+    \textit{Insert Project Manager Members page screenshot.}
+    \vspace{1.6cm}
+    }}
+}
+\caption{Project Manager Members Page}
+\label{fig:pm-members-page}
 \end{figure}
 Figure~\ref{fig:pm-members-page} presents members linked to assigned projects for manager-level team supervision.
 
 \subsection{Members attendance monitoring interface}
 \begin{figure}[H]
-	\centering
-	\IfFileExists{assets/pm/members-attendance-page.jpg}{%
-		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/members-attendance-page.jpg}
-	}{%
-		\fbox{\parbox{0.9\textwidth}{
-				\centering
-				\vspace{1.6cm}
-				\textit{Missing file: assets/pm/members-attendance-page.jpg}\\
-				\textit{Insert Project Manager Members/Members Attendance page screenshot.}
-				\vspace{1.6cm}
-		}}
-	}
-	\caption{Project Manager Members and Attendance Monitoring}
-	\label{fig:pm-members-attendance-page}
+\centering
+\IfFileExists{assets/pm/members-attendance-page.jpg}{%
+    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/pm/members-attendance-page.jpg}
+}{%
+    \fbox{\parbox{0.9\textwidth}{
+    \centering
+    \vspace{1.6cm}
+    \textit{Missing file: assets/pm/members-attendance-page.jpg}\\
+    \textit{Insert Project Manager Members/Members Attendance page screenshot.}
+    \vspace{1.6cm}
+    }}
+}
+\caption{Project Manager Members and Attendance Monitoring}
+\label{fig:pm-members-attendance-page}
 \end{figure}
 Figure~\ref{fig:pm-members-attendance-page} illustrates member-level supervision and attendance tracking within assigned projects.
 
 \section{Conclusion}
-The Project Manager modules delivered role-scoped supervision features and stable manager-facing workflows for project and attendance monitoring.
+Project Manager Supervision and Attendance Monitoring delivered role-scoped supervision features and stable manager-facing workflows for project and attendance monitoring.

@@ -1,12 +1,14 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {8.1}Introduction}{\reset@font\mtcSfont 74}{section.8.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {8.2}Sprint Backlog}{\reset@font\mtcSfont 74}{section.8.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {8.3}Sprint Design}{\reset@font\mtcSfont 74}{section.8.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {8.3.1}Conversation and interaction design}{\reset@font\mtcSSfont 74}{subsection.8.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {8.3.2}LangGraph routing design}{\reset@font\mtcSSfont 75}{subsection.8.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {8.4}Conception}{\reset@font\mtcSfont 76}{section.8.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {8.4.1}RH Agent sequence diagram}{\reset@font\mtcSSfont 76}{subsection.8.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {8.4.2}Agent state model conception}{\reset@font\mtcSSfont 77}{subsection.8.4.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {8.5}Sprint Realization}{\reset@font\mtcSfont 77}{section.8.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {8.5.1}Implementation outcomes}{\reset@font\mtcSSfont 77}{subsection.8.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {8.5.2}RH Agent interface}{\reset@font\mtcSSfont 78}{subsection.8.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {8.6}Conclusion}{\reset@font\mtcSfont 78}{section.8.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1}Introduction}{\reset@font\mtcSfont 65}{section.6.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2}Sprint Backlog}{\reset@font\mtcSfont 65}{section.6.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3}Sprint Design}{\reset@font\mtcSfont 65}{section.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1}Employees page design mockup}{\reset@font\mtcSSfont 65}{subsection.6.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2}Check-In/Out page design mockup}{\reset@font\mtcSSfont 66}{subsection.6.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3}Employee Leave page design mockup}{\reset@font\mtcSSfont 66}{subsection.6.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4}Conception}{\reset@font\mtcSfont 67}{section.6.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1}HR use case diagram}{\reset@font\mtcSSfont 67}{subsection.6.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5}Sprint Realization}{\reset@font\mtcSfont 68}{section.6.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1}Implementation outcomes}{\reset@font\mtcSSfont 68}{subsection.6.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2}Employees page interface}{\reset@font\mtcSSfont 69}{subsection.6.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3}Check-In/Out page interface}{\reset@font\mtcSSfont 69}{subsection.6.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4}Employee Leave page interface}{\reset@font\mtcSSfont 70}{subsection.6.5.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6}Conclusion}{\reset@font\mtcSfont 70}{section.6.6}}

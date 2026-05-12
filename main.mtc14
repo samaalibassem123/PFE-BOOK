@@ -1,0 +1,12 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1}Introduction}{\reset@font\mtcSfont 79}{section.8.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2}Sprint Backlog}{\reset@font\mtcSfont 79}{section.8.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3}Sprint Design}{\reset@font\mtcSfont 79}{section.8.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1}Conversation and interaction design}{\reset@font\mtcSSfont 79}{subsection.8.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2}LangGraph routing design}{\reset@font\mtcSSfont 80}{subsection.8.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4}Conception}{\reset@font\mtcSfont 81}{section.8.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1}RH Agent sequence diagram}{\reset@font\mtcSSfont 81}{subsection.8.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2}Agent state model conception}{\reset@font\mtcSSfont 83}{subsection.8.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5}Sprint Realization}{\reset@font\mtcSfont 83}{section.8.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1}Implementation outcomes}{\reset@font\mtcSSfont 83}{subsection.8.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2}RH Agent interface}{\reset@font\mtcSSfont 84}{subsection.8.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6}Conclusion}{\reset@font\mtcSfont 84}{section.8.6}}

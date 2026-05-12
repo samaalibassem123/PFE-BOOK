@@ -1,15 +1,11 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Introduction}{\reset@font\mtcSfont 53}{section.5.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Sprint Backlog}{\reset@font\mtcSfont 53}{section.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Sprint Design}{\reset@font\mtcSfont 53}{section.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}Dashboard module design}{\reset@font\mtcSSfont 53}{subsection.5.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}Projects module design}{\reset@font\mtcSSfont 54}{subsection.5.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Conception}{\reset@font\mtcSfont 54}{section.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Administration use case diagram}{\reset@font\mtcSSfont 54}{subsection.5.4.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Sprint Realization}{\reset@font\mtcSfont 55}{section.5.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}Implementation outcomes}{\reset@font\mtcSSfont 55}{subsection.5.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.2}Administration dashboard and users interface}{\reset@font\mtcSSfont 56}{subsection.5.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.3}Projects interface}{\reset@font\mtcSSfont 56}{subsection.5.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.4}Assign project interface}{\reset@font\mtcSSfont 57}{subsection.5.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.5}Settings page interface}{\reset@font\mtcSSfont 57}{subsection.5.5.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.6}Filtering and pagination interface}{\reset@font\mtcSSfont 58}{subsection.5.5.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Conclusion}{\reset@font\mtcSfont 58}{section.5.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1}Introduction}{\reset@font\mtcSfont 39}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2}Sprint Backlog}{\reset@font\mtcSfont 39}{section.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3}Sprint Design}{\reset@font\mtcSfont 39}{section.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1}Refinement of data rules and ETL mappings}{\reset@font\mtcSSfont 39}{subsection.3.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4}Conception}{\reset@font\mtcSfont 40}{section.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1}ETL Pipeline Architecture}{\reset@font\mtcSSfont 40}{subsection.3.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2}Data Validation and Control Flow}{\reset@font\mtcSSfont 42}{subsection.3.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3}Key Design Advantages}{\reset@font\mtcSSfont 43}{subsection.3.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5}Sprint Realization}{\reset@font\mtcSfont 43}{section.3.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1}Implementation outcomes}{\reset@font\mtcSSfont 43}{subsection.3.5.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6}Conclusion}{\reset@font\mtcSfont 44}{section.3.6}}

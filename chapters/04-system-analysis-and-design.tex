@@ -3,36 +3,70 @@
 \clearpage
 
 \section{Introduction}
-This chapter presents \textbf{Sprint 1}, dedicated to system analysis and design. During this sprint, the objective was not to implement functional modules yet, but to understand the source systems, define user needs, identify the required data scope, and prepare the main design artifacts that would guide the following development sprints.
+This chapter presents \textbf{Sprint 0}, dedicated to system analysis and design. During this sprint, the objective was not to implement functional modules yet, but to understand the source systems, define user needs, identify the required data scope, and prepare the main design artifacts that would guide the following development sprints.
 
 The work carried out in this sprint focused on four complementary axes: identifying the actors and their access scope, modeling the main use cases, analyzing the source systems and the ETL-oriented data structure, and defining the global architecture of the solution.
 
 \section{Sprint Backlog}
-The Sprint 1 backlog focused on analysis, modeling, and architectural preparation for the rest of the project.
+The Sprint 0 backlog focused on analysis, modeling, and architectural preparation for the rest of the project.
 
-\begin{center}
+\begin{table}[H]
+	\centering
 	\renewcommand{\arraystretch}{1.2}
 	\begin{tabular}{|l|>{\raggedright\arraybackslash}p{10.2cm}|l|}
 		\hline
 		\textbf{ID} & \textbf{Backlog Item} & \textbf{Priority} \\
 		\hline
-		S1-BL-01 & Identify the main system actors and define their access scope and responsibilities. & High \\
+		S0-BL-01 & Identify the main system actors and define their access scope and responsibilities. & High \\
 		\hline
-		S1-BL-02 & Model the global use case diagram of the platform and describe the principal user interactions. & High \\
+		S0-BL-02 & Model the global use case diagram of the platform and describe the principal user interactions. & High \\
 		\hline
-		S1-BL-03 & Explore the BioTime and EasyProject schemas and select the tables required for integration. & High \\
+		S0-BL-03 & Explore the BioTime and EasyProject schemas and select the tables required for integration. & High \\
 		\hline
-		S1-BL-04 & Design SQL views that simplify ETL extraction from the two source systems. & High \\
+		S0-BL-04 & Design SQL views that simplify ETL extraction from the two source systems. & High \\
 		\hline
-		S1-BL-05 & Define the initial unified PostgreSQL target schema and key integration constraints. & High \\
+		S0-BL-05 & Define the initial unified PostgreSQL target schema and key integration constraints. & High \\
 		\hline
-		S1-BL-06 & Establish the main application diagram and the global system architecture used as the reference for later sprints. & Medium \\
+		S0-BL-06 & Establish the class diagram, physical ERD, and global system architecture used as the reference for later sprints. & Medium \\
 		\hline
 	\end{tabular}
-\end{center}
+	\caption{Sprint 0 backlog}
+	\label{tab:sprint-0-backlog}
+	{\footnotesize\textit{Source: Author's work.}}
+\end{table}
 
 \section{Sprint Design}
-Sprint 1 design aimed to transform a business problem into a structured technical solution. The design effort started with user and access analysis, then moved to source-system exploration, and finally to the high-level architecture that would orient ETL and application development.
+Sprint 0 design aimed to transform a business problem into a structured technical solution. The design effort started with user and access analysis, then moved to source-system exploration, and finally to the high-level architecture that would orient ETL and application development.
+
+\subsection{Global System Architecture}
+
+The architecture starts by extracting data from \textbf{BioTime (PostgreSQL)} and \textbf{EasyProject (MySQL)} with \textbf{SQLAlchemy}. The data is then transformed and loaded into the main application database.
+
+On top of this unified database, the backend uses \textbf{FastAPI}, \textbf{Alembic}, and \textbf{SQLAlchemy}. It exposes endpoints consumed by a frontend built with \textbf{React}, \textbf{Tailwind CSS}, and \textbf{shadcn/ui}.
+
+\Needspace{0.70\textheight}
+\vspace*{\fill}
+\textbf{Global System Architecture Diagram}
+Figure~\ref{fig:global-system-architecture} presents the end-to-end architecture, from source systems and ETL processing to the unified database, backend services, and frontend modules.
+
+\begin{figure}[H]
+	\centering
+	\IfFileExists{diagrams/ch2-global-system-architecture.png}{%
+		\includegraphics[width=0.98\textwidth,height=0.72\textheight,keepaspectratio]{diagrams/ch2-global-system-architecture.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{2.0cm}
+				\textit{Missing file: diagrams/ch2-global-system-architecture.png}\\
+				\textit{Insert the global system architecture flow diagram.}
+				\vspace{2.0cm}
+		}}
+	}
+	\caption{Global System Architecture Flow}
+	\label{fig:global-system-architecture}
+\end{figure}
+\vspace*{\fill}
+\clearpage
 
 \subsection{Actors and Access Scope}
 The platform has three main actors. Each actor has a clear role in the system:
@@ -53,7 +87,7 @@ During this sprint, the design effort focused on clarifying what each actor must
 \end{itemize}
 
 \subsection{Global Use Case Diagram}
-The global use case diagram was produced during Sprint 1 to consolidate the functional perimeter of the future application and establish a shared understanding of actor responsibilities.
+The global use case diagram was produced during Sprint 0 to consolidate the functional perimeter of the future application and establish a shared understanding of actor responsibilities.
 
 \begin{figure}[H]
 	\centering
@@ -82,7 +116,8 @@ The global use case diagram was produced during Sprint 1 to consolidate the func
 \subsection{Main Use Cases Description}
 To complement the global use case diagram, the main use cases were described textually so they could be referenced more easily during later design and implementation work.
 
-\begin{center}
+\begin{table}[H]
+	\centering
 	\renewcommand{\arraystretch}{1.2}
 	\begin{tabular}{|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{4.8cm}|>{\raggedright\arraybackslash}p{6.8cm}|}
 		\hline
@@ -107,7 +142,11 @@ To complement the global use case diagram, the main use cases were described tex
 		Project Manager & View Team Attendance & Monitors the attendance of team members in assigned projects. \\
 		\hline
 	\end{tabular}
-\end{center}
+	
+	\caption{Actors and main use cases}
+	\label{tab:actors-main-use-cases}
+	{\footnotesize\textit{Source: Author's work.}}
+\end{table}
 
 \subsection{Source Systems Exploration and Table Selection}
 The two source systems, \textbf{BioTime} and \textbf{EasyProject}, contain many operational tables. To keep the integration clear and efficient, we first explored both schemas and kept only the entities needed for ETL.
@@ -159,12 +198,51 @@ Figure~\ref{fig:easyproject-selected-tables} shows the EasyProject tables kept f
 \vspace*{\fill}
 \clearpage
 
-\subsection{View Layer for ETL Simplification}
+\section{Conception}
+The conception phase of Sprint 0 consolidated the main design artifacts that would guide subsequent implementation. It covered the application class structure, the target data structure, the integration constraints, and the global technical architecture of the solution.
+
+\Needspace{0.82\textheight}
+\vspace*{\fill}
+\subsection{Class Diagram}
+Figure~\ref{fig:class-diagram} presents the main backend domain classes and their relationships. It clarifies the object-oriented structure used to support users, roles, projects, employees, attendance records, and leave information.
+\begin{figure}[H]
+	\centering
+	\IfFileExists{diagrams/ch2-class-diagram.png}{%
+		\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{diagrams/ch2-class-diagram.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{2.0cm}
+				\textit{Missing file: diagrams/ch2-class-diagram.png}\\
+				\textit{Insert the class diagram of the application domain model.}
+				\vspace{2.0cm}
+		}}
+	}
+	\caption{Class Diagram}
+	\label{fig:class-diagram}
+\end{figure}
+\vspace*{\fill}
+\clearpage
+
+\section{Sprint Outcomes}
+At the end of Sprint 0, the main outcome was a complete analysis and design baseline that structured the rest of the project. Even though no final user-facing module was delivered yet, this sprint produced the essential functional and technical artifacts used in the following iterations.
+
+\subsection{Main Deliverables of Sprint 0}
+\begin{itemize}[noitemsep]
+	\item Defined the three main actors of the system and clarified their access boundaries.
+	\item Produced the global use case diagram and the textual description of major use cases.
+	\item Explored the BioTime and EasyProject schemas and selected the relevant tables for integration.
+	\item Designed SQL views to simplify extraction and harmonization during ETL processing.
+	\item Prepared the initial unified PostgreSQL target view of the data model.
+	\item Established the class diagram, physical ERD, and end-to-end global architecture.
+\end{itemize}
+
+\subsection{Sprint Outcome: View Layer for ETL Simplification}
 After selecting the source tables, we created SQL views in each system. These views standardize field names, reduce join complexity, and provide clean ETL inputs.
 
 \Needspace{0.74\textheight}
 \vspace*{\fill}
-\textbf{3) BioTime Views Created After Table Selection}
+\textbf{BioTime Views Created After Table Selection}
 Figure~\ref{fig:biotime-created-views} illustrates the BioTime view layer. It isolates useful attendance data and gives a stable extraction interface for ETL.
 \begin{figure}[H]
 	\centering
@@ -178,6 +256,7 @@ Figure~\ref{fig:biotime-created-views} illustrates the BioTime view layer. It is
 				\textit{Insert image of BioTime views created for ETL simplification.}
 				\vspace{1.8cm}
 		}}
+		
 	}
 	\caption{Views Created from BioTime Selected Tables}
 	\label{fig:biotime-created-views}
@@ -187,7 +266,7 @@ Figure~\ref{fig:biotime-created-views} illustrates the BioTime view layer. It is
 
 \Needspace{0.74\textheight}
 \vspace*{\fill}
-\textbf{4) EasyProject Views Created After Table Selection}
+\textbf{ EasyProject Views Created After Table Selection}
 Figure~\ref{fig:easyproject-created-views} presents the EasyProject views. This intermediate layer simplifies access to HR and project attributes and harmonizes data before loading.
 \begin{figure}[H]
 	\centering
@@ -208,16 +287,13 @@ Figure~\ref{fig:easyproject-created-views} presents the EasyProject views. This 
 \vspace*{\fill}
 \clearpage
 
-\section{Conception}
-The conception phase of Sprint 1 consolidated the main design artifacts that would guide subsequent implementation. It covered the target data structure, the integration constraints, and the global technical architecture of the solution.
-
-\subsection{Unified PostgreSQL Target Schema and Integration Constraints}
+\subsection{Sprint Outcome: Unified PostgreSQL Target Schema and Integration Constraints}
 The transformed outputs from both view layers are loaded into one unified PostgreSQL schema. At this stage, identifiers and timestamps are normalized, duplicates are removed, and integrity constraints are applied to keep analytics consistent across systems.
 
 \Needspace{0.82\textheight}
 \vspace*{\fill}
-\textbf{Main Application Diagram (Global Architecture Placeholder)}
-Figure~\ref{fig:main-app-diagram} summarizes the main structure of the application. It shows how data moves from source systems to ETL, then to the unified database, backend services, and user modules.
+\textbf{Physical ERD Diagram}
+Figure~\ref{fig:physical-erd-diagram} presents the physical Entity--Relationship Diagram of the unified PostgreSQL database. It shows the concrete tables, relationships, keys, and database structure prepared for the application.
 \begin{figure}[H]
 	\centering
 	\IfFileExists{diagrams/ch2-main-app-diagram.png}{%
@@ -227,63 +303,20 @@ Figure~\ref{fig:main-app-diagram} summarizes the main structure of the applicati
 				\centering
 				\vspace{2.0cm}
 				\textit{Missing file: diagrams/ch2-main-app-diagram.png}\\
-				\textit{Insert the main application diagram (global system view).}
+				\textit{Insert the physical ERD diagram of the unified PostgreSQL database.}
 				\vspace{2.0cm}
 		}}
 	}
-	\caption{Main Application Diagram}
-	\label{fig:main-app-diagram}
+	\caption{Physical ERD Diagram}
+	\label{fig:physical-erd-diagram}
 \end{figure}
 \vspace*{\fill}
 \clearpage
 
-\subsection{Global System Architecture}
-
-The architecture starts by extracting data from \textbf{BioTime (PostgreSQL)} and \textbf{EasyProject (MySQL)} with \textbf{SQLAlchemy}. The data is then transformed and loaded into the main application database.
-
-On top of this unified database, the backend uses \textbf{FastAPI}, \textbf{Alembic}, and \textbf{SQLAlchemy}. It exposes endpoints consumed by a frontend built with \textbf{React}, \textbf{Tailwind CSS}, and \textbf{shadcn/ui}.
-
-\Needspace{0.70\textheight}
-\vspace*{\fill}
-\textbf{Global System Architecture Diagram}
-Figure~\ref{fig:global-system-architecture} presents the end-to-end architecture, from source systems and ETL processing to the unified database, backend services, and frontend modules.
-
-\begin{figure}[H]
-	\centering
-	\IfFileExists{diagrams/ch2-global-system-architecture.png}{%
-		\includegraphics[width=0.98\textwidth,height=0.72\textheight,keepaspectratio]{diagrams/ch2-global-system-architecture.png}
-	}{%
-		\fbox{\parbox{0.9\textwidth}{
-				\centering
-				\vspace{2.0cm}
-				\textit{Missing file: diagrams/ch2-global-system-architecture.png}\\
-				\textit{Insert the global system architecture flow diagram.}
-				\vspace{2.0cm}
-		}}
-	}
-	\caption{Global System Architecture Flow}
-	\label{fig:global-system-architecture}
-\end{figure}
-\vspace*{\fill}
-\clearpage
-
-\section{Sprint Realization}
-At the end of Sprint 1, the main outcome was a complete analysis and design baseline that structured the rest of the project. Even though no final user-facing module was delivered yet, this sprint produced the essential functional and technical artifacts used in the following iterations.
-
-\subsection{Main Deliverables of Sprint 1}
-\begin{itemize}[noitemsep]
-	\item Defined the three main actors of the system and clarified their access boundaries.
-	\item Produced the global use case diagram and the textual description of major use cases.
-	\item Explored the BioTime and EasyProject schemas and selected the relevant tables for integration.
-	\item Designed SQL views to simplify extraction and harmonization during ETL processing.
-	\item Prepared the initial unified PostgreSQL target view of the data model.
-	\item Established the main application diagram and the end-to-end global architecture.
-\end{itemize}
-
-\subsection{Sprint 1 Contribution to the Next Sprints}
-Sprint 1 served as the foundation for all later work. The ETL sprint relied on the selected tables, source views, and target schema defined here. The authentication and business-module sprints also reused the actor definitions, access scope, and architecture decisions established during this initial analysis and design phase.
+\subsection{Sprint 0 Contribution to the Next Sprints}
+Sprint 0 served as the foundation for all later work. The ETL sprint relied on the selected tables, source views, and target schema defined here. The authentication and business-module sprints also reused the actor definitions, access scope, and architecture decisions established during this initial analysis and design phase.
 
 \section{Chapter Conclusion}
-This chapter presented \textbf{Sprint 1: System Analysis and Design}. It established the functional and technical foundation of the project by identifying actors and use cases, exploring the source systems, preparing the ETL-oriented data structure, and defining the global architecture of the solution.
+This chapter presented \textbf{Sprint 0: System Analysis and Design}. It established the functional and technical foundation of the project by identifying actors and use cases, exploring the source systems, preparing the ETL-oriented data structure, and defining the global architecture of the solution.
 
 These outputs created a clear roadmap for implementation. The next chapter moves from analysis and design to concrete data integration work through the ETL process and the construction of the unified database.

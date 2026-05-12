@@ -28,6 +28,24 @@ I hope this report is clear and meets their expectations.
 \addcontentsline{toc}{chapter}{Table of contents}
 \mtcaddchapter
 \clearpage
+
+% Automatic list of figures: every figure with \caption{...} is added here.
+% Compile with latexmk (or run pdflatex twice) after adding/deleting figures.
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of figures}
+\listoffigures
+\mtcaddchapter
+\clearpage
+
+% Automatic list of tables: every table with \caption{...} is added here.
+% Compile with latexmk (or run pdflatex twice) after adding/deleting tables.
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of tables}
+\listoftables
+\mtcaddchapter
+\clearpage
 \hypersetup{pageanchor=true}
 
 % List of abbreviations (optional)

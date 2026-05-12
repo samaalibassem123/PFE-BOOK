@@ -3,29 +3,33 @@
 \clearpage
 
 \section{Introduction}
-This chapter presents Sprint 3, focused on building the ETL foundation and the unified operational database. The goal was to bring data from different systems into one clean, consistent, and monitorable flow before using it in business modules.
+This chapter presents Sprint 1, focused on building the ETL foundation and the unified operational database. The goal was to bring data from different systems into one clean, consistent, and monitorable flow before using it in business modules.
 
 \section{Sprint Backlog}
-The sprint backlog for Sprint 3 was formalized as user stories focused on ETL and unified database delivery:
+The sprint backlog for Sprint 1 was formalized as backlog items focused on ETL and unified database delivery:
 
-\begin{center}
+\begin{table}[H]
+\centering
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{|l|>{\raggedright\arraybackslash}p{9.0cm}|l|}
 \hline
-\textbf{ID} & \textbf{User Story} & \textbf{Priority} \\
+\textbf{ID} & \textbf{Backlog Item} & \textbf{Priority} \\
 \hline
-US1 & As a system administrator, I want to connect to BioTime and EasyProject data sources so that ETL can extract operational data. & High \\
+S1-BL-01 & Connect to BioTime and EasyProject data sources so the ETL process can extract operational data. & High \\
 \hline
-US2 & As a data engineer, I want to build entity-based extraction pipelines (departments, employees, attendance, projects, members) to structure ingestion. & High \\
+S1-BL-02 & Build entity-based extraction pipelines for departments, employees, attendance, projects, and members to structure ingestion. & High \\
 \hline
-US3 & As a data engineer, I want to apply transformation and normalization rules so that unified data remains clean and consistent. & High \\
+S1-BL-03 & Apply transformation and normalization rules to keep unified data clean and consistent. & High \\
 \hline
-US4 & As a system, I want to load transformed records into the PostgreSQL target schema while preserving referential integrity. & High \\
+S1-BL-04 & Load transformed records into the PostgreSQL target schema while preserving referential integrity. & High \\
 \hline
-US5 & As an administrator, I want to monitor ETL execution status and errors in real time so that failures can be detected early. & Medium \\
+S1-BL-05 & Monitor ETL execution status and errors in real time so failures can be detected early. & Medium \\
 \hline
 \end{tabular}
-\end{center}
+\caption{Sprint 1 backlog}
+\label{tab:sprint-1-backlog}
+{\footnotesize\textit{Source: Author's work.}}
+\end{table}
 
 \section{Sprint Design}
 Sprint design followed an ETL-first approach. We apply integrity and control rules before application services consume the data.
@@ -61,8 +65,6 @@ Each pipeline handles extraction, transformation (cleaning, mapping, normalizati
 Figure~\ref{fig:modular-etl-architecture} shows how independent pipeline modules separate extraction, transformation, and loading responsibilities.
 
 \begin{figure}[H]
-\caption{Modular ETL architecture built around entity-based pipelines}
-\label{fig:modular-etl-architecture}
 \centering
 \IfFileExists{diagrams/ch3-modular-etl-architecture.png}{%
     \includegraphics[width=0.92\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch3-modular-etl-architecture.png}
@@ -75,6 +77,8 @@ Figure~\ref{fig:modular-etl-architecture} shows how independent pipeline modules
     \vspace{1.6cm}
     }}
 }
+\caption{Modular ETL architecture built around entity-based pipelines}
+\label{fig:modular-etl-architecture}
 \end{figure}
 
 
@@ -91,8 +95,6 @@ The Main Pipeline orchestrates all ETL pipelines in a strict predefined order. T
 Figure~\ref{fig:main-pipeline-sequence} details truncation, ordered pipeline execution, and final completion reporting.
 
 \begin{figure}[H]
-\caption{Sequence of the main pipeline orchestration}
-\label{fig:main-pipeline-sequence}
 \centering
 \IfFileExists{diagrams/ch3-main-pipeline-sequence.png}{%
     \includegraphics[width=0.92\textwidth,height=0.50\textheight,keepaspectratio]{diagrams/ch3-main-pipeline-sequence.png}
@@ -105,6 +107,8 @@ Figure~\ref{fig:main-pipeline-sequence} details truncation, ordered pipeline exe
     \vspace{1.6cm}
     }}
 }
+\caption{Sequence of the main pipeline orchestration}
+\label{fig:main-pipeline-sequence}
 \end{figure}
 
 
@@ -152,8 +156,6 @@ Execution time is measured with \texttt{time.perf\_counter()} for each step to i
 Figure~\ref{fig:validation-control-flow} summarizes validation checkpoints, dependency enforcement, error propagation, and performance tracking.
 
 \begin{figure}[H]
-\caption{Data validation and control-flow mechanisms used in the ETL process}
-\label{fig:validation-control-flow}
 \centering
 \IfFileExists{diagrams/ch3-validation-control-flow.png}{%
     \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{diagrams/ch3-validation-control-flow.png}
@@ -166,6 +168,8 @@ Figure~\ref{fig:validation-control-flow} summarizes validation checkpoints, depe
     \vspace{1.6cm}
     }}
 }
+\caption{Data validation and control-flow mechanisms used in the ETL process}
+\label{fig:validation-control-flow}
 \end{figure}
 
 
@@ -188,4 +192,4 @@ Figure~\ref{fig:validation-control-flow} summarizes validation checkpoints, depe
 \end{itemize}
 
 \section{Conclusion}
-Sprint 3 delivered a robust and observable ETL foundation and produced the unified PostgreSQL database used by later modules. The resulting data layer ensures consistency, traceability, and operational readiness for authentication, HR, and project-management features.
+Sprint 1 delivered a robust and observable ETL foundation and produced the unified PostgreSQL database used by later modules. The resulting data layer ensures consistency, traceability, and operational readiness for authentication, HR, and project-management features.

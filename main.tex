@@ -1,6 +1,6 @@
 
 % !TEX program = pdflatex
-\documentclass[a4paper,12pt]{report}
+\documentclass[a4paper,12pt]{report} 
 
 % ------------------ Packages ------------------
 \usepackage[utf8]{inputenc}
@@ -9,7 +9,6 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{setspace}
-\usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{tikz}
 \usepackage[table]{xcolor}
@@ -18,20 +17,17 @@
 \usepackage{float}
 \usepackage{needspace}
 \usepackage{longtable}
-\usepackage{minitoc}
-
-% Chapter style with a horizontal line
-\titleformat{\chapter}[display]
-  {\normalfont\Huge\bfseries}
-  {\chaptername\ \thechapter}{20pt}{}
-  [\vspace{0.5ex}\titlerule] % <-- adds the line under the title
 
 %To make links active
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, linkcolor=black, linktoc=all}
+\usepackage[nohints]{minitoc}
 
-% Use standard decimal numbering for subsections
-% Example: 5.2.1
+% Number sections independently inside each chapter.
+% Example: 1 General Context, 1.1 Organizational Chart
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
 
 
 % Page Paddings
@@ -41,6 +37,8 @@
     top=2.5cm,
     bottom=3cm
 }
+
+\raggedbottom
 
 % Suppress minor box warnings in dense report layout
 \hbadness=10000
@@ -59,24 +57,24 @@
 
 \newcommand\PageBorder{%
   \begin{tikzpicture}[remember picture,overlay]
-    \draw[line width=1.5pt, myborder]  % ← use the name here
-      ($(current page.north west)+(1.3cm,-1.3cm)$)
-      rectangle
-      ($(current page.south east)+(-1.3cm,1.3cm)$);
-    \draw[line width=2.5pt, myborder]
-      ($(current page.north west)+(1.4cm,-1.4cm)$)
-      rectangle
-      ($(current page.south east)+(-1.4cm,1.4cm)$);
-  \end{tikzpicture}%
-}
+      \draw[line width=1.5pt, myborder]  % ← use the name here
+            ($(current page.north west)+(1.3cm,-1.3cm)$)
+                  rectangle
+                        ($(current page.south east)+(-1.3cm,1.3cm)$);
+                            \draw[line width=2.5pt, myborder]
+                                  ($(current page.north west)+(1.4cm,-1.4cm)$)
+                                        rectangle
+                                              ($(current page.south east)+(-1.4cm,1.4cm)$);
+                                                \end{tikzpicture}%
+                                                }
 
 
-% ------------------ Technology Icons ------------------
-\newcommand{\TechIcon}[2][0.68cm]{%
-  \parbox[c][1.0cm][c]{1.5cm}{\centering\includegraphics[width=#1,height=#1,keepaspectratio]{#2}}%
-}
+                                                % ------------------ Technology Icons ------------------
+                                                \newcommand{\TechIcon}[2][0.68cm]{%
+                                                  \makebox[1.5cm][c]{\includegraphics[width=#1,height=#1,keepaspectratio]{#2}}%
+                                                  }
 
-
+                                                  
 
 % ------------------ Document ------------------
 \begin{document}
@@ -126,7 +124,7 @@ Submitted in partial fulfillment of the requirements for the degree:\\[0.3cm]
 \parbox{0.85\textwidth}{
 \centering
 \vspace{0.4cm}
-{\Large\textcolor{blue}{\textbf{FYP Title}}}
+{\Large\textcolor{blue}{\textbf{Design and Implementation of a Centralized Workforce Attendance Supervision System}}}
 \vspace{0.4cm}
 }
 }
@@ -144,7 +142,7 @@ Submitted in partial fulfillment of the requirements for the degree:\\[0.3cm]
 
 % ------------------ Author ------------------
 \textbf{PREPARED BY}\\[0.3cm]
- Mr \textbf{Samaali Bassem}\\[1.2cm]
+ Mr \textbf{Samaali Bassem}\\[0.5cm]
 
 % ------------------ Supervisors ------------------
 \textbf{SUPERVISED BY}\\[0.4cm]

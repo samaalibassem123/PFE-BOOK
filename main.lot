@@ -1,0 +1,38 @@
+\contentsline {xchapter}{}{1}{chapter*.1}%
+\contentsline {xchapter}{}{5}{chapter*.2}%
+\contentsline {xchapter}{}{7}{chapter*.4}%
+\contentsline {xchapter}{}{8}{chapter*.6}%
+\contentsline {xchapter}{}{9}{chapter*.7}%
+\contentsline {xchapter}{}{10}{chapter*.8}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{General Framework of the Project}{11}{chapter.1}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Company overview}}{12}{table.1.1}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Functional requirements}}{16}{table.1.2}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces Non-functional requirements}}{17}{table.1.3}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces Sprint plan}}{20}{table.1.4}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces Technology stack and rationale, part 1}}{21}{table.1.5}%
+\contentsline {table}{\numberline {1.6}{\ignorespaces Technology stack and rationale, part 2}}{22}{table.1.6}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{System Analysis and Design}{24}{chapter.2}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Sprint 0 backlog}}{25}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Actors and main use cases}}{29}{table.2.2}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{ETL and Unified Database}{38}{chapter.3}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Sprint 1 backlog}}{39}{table.3.1}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Authentication and Access Control}{45}{chapter.4}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Sprint 2 backlog}}{46}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Authentication security controls}}{56}{table.4.2}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Admin Dashboard and Project Assignment}{57}{chapter.5}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Sprint 3 backlog}}{58}{table.5.1}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{HR - Employee Attendance and Leave Monitoring}{64}{chapter.6}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Sprint 4 backlog}}{65}{table.6.1}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Project Manager Supervision and Attendance Monitoring}{71}{chapter.7}%
+\contentsline {table}{\numberline {7.1}{\ignorespaces Sprint 5 backlog}}{72}{table.7.1}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{RH Agent Integration}{78}{chapter.8}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces Sprint 6 backlog}}{79}{table.8.1}%
+\contentsline {xchapter}{}{84}{section.8.6}%

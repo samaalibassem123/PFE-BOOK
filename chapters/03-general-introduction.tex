@@ -9,7 +9,8 @@ This internship was carried out at \textbf{OneTech Business Solutions (OTBS)}. O
 
 Within the HR and project follow-up workflow, two internal systems were already in use: \textbf{BioTime} for attendance tracking and \textbf{EasyProject} for HR and project-related data. Although each system functioned correctly on its own, they were not directly synchronized.
 
-\begin{center}
+\begin{table}[H]
+\centering
 	\renewcommand{\arraystretch}{1.2}
 	\begin{tabular}{|l|>{\raggedright\arraybackslash}p{10cm}|}
 		\hline
@@ -25,15 +26,18 @@ Within the HR and project follow-up workflow, two internal systems were already 
 		\hline
 		\textbf{Infrastructure} & On-premise PostgreSQL and MySQL databases, internal network \\
 		\hline
-		\textbf{Internship Duration} & 3 months (approximately 12 weeks) \\
+		\textbf{Internship Duration} & 14 weeks (approximately 3.5 months) \\
 		\hline
 		\textbf{Intern Role} & Full-Stack Developer --- Design, ETL, Backend (FastAPI), Frontend (React) \\
 		\hline
 	\end{tabular}
-\end{center}
+\caption{Company overview}
+\label{tab:company-overview}
+{\footnotesize\textit{Source: Adapted from OneTech Business Solutions and OneTech Group public information.}}
+\end{table}
 
 \subsection{Organizational Chart}
-The organizational chart in Figure~\ref{fig:group-management-structure} presents the group management structure of the company and highlights its position within the broader organizational hierarchy.
+Figure~\ref{fig:group-management-structure} provides a structured view of the company's group management hierarchy. It helps clarify the organizational levels and shows the position of OTBS within the broader OneTech Group structure.
 
 \clearpage
 \thispagestyle{plain}
@@ -68,11 +72,11 @@ Figure~\ref{fig:biotime-definition-placeholder} is reserved for an illustration 
 		\includegraphics[width=0.90\textwidth,height=0.42\textheight,keepaspectratio]{assets/general/biotime-definition.jpg}
 	}{%
 		\fbox{\parbox{0.9\textwidth}{
-				\centering
-				\vspace{1.6cm}
-				\textit{Missing file: assets/general/biotime-definition.jpg}\\
-				\textit{Insert a BioTime software illustration, interface capture, or explanatory diagram.}
-				\vspace{1.6cm}
+			\centering
+			\vspace{1.6cm}
+			\textit{Missing file: assets/general/biotime-definition.jpg}\\
+			\textit{Insert a BioTime software illustration, interface capture, or explanatory diagram.}
+			\vspace{1.6cm}
 		}}
 	}
 	\caption{Placeholder for BioTime software presentation}
@@ -86,14 +90,14 @@ Figure~\ref{fig:easyproject-definition-placeholder} is reserved for an illustrat
 \begin{figure}[H]
 	\centering
 	\IfFileExists{assets/general/easyproject-definition.jpg}{%
-		\includegraphics[width=0.90\textwidth,height=0.42\textheight,keepaspectratio]{assets/general/easyproject-definition.jpg}
+		\includegraphics[width=0.50\textwidth,height=0.42\textheight,keepaspectratio]{assets/general/easyproject-definition.jpg}
 	}{%
 		\fbox{\parbox{0.9\textwidth}{
-				\centering
-				\vspace{1.6cm}
-				\textit{Missing file: assets/general/easyproject-definition.jpg}\\
-				\textit{Insert an EasyProject software illustration, interface capture, or explanatory diagram.}
-				\vspace{1.6cm}
+			\centering
+			\vspace{1.6cm}
+			\textit{Missing file: assets/general/easyproject-definition.jpg}\\
+			\textit{Insert an EasyProject software illustration, interface capture, or explanatory diagram.}
+			\vspace{1.6cm}
 		}}
 	}
 	\caption{Placeholder for EasyProject software presentation}
@@ -135,65 +139,78 @@ More specifically, the project aimed to:
 
 \section{Requirements Analysis}
 \subsection{Functional Requirements}
-
-\textbf{Administrator}
-\begin{itemize}[noitemsep]
-	\item \textbf{FR-01}: Create and manage user accounts.
-	\item \textbf{FR-02}: Assign roles (Admin, HR, Project Manager).
-	\item \textbf{FR-03}: Assign projects to Project Managers.
-	\item \textbf{FR-04}: Assign Project Managers to projects.
-	\item \textbf{FR-05}: The Administrator shall not access employee details or attendance records.
-\end{itemize}
-
-\textbf{Human Resources (HR)}
-\begin{itemize}[noitemsep]
-	\item \textbf{FR-06}: View all employees across the organization.
-	\item \textbf{FR-07}: View attendance records for all employees.
-	\item \textbf{FR-08}: View attendance summaries and reports at global scope.
-	\item \textbf{FR-09}: Manage HR attendance and leave follow-up operations.
-\end{itemize}
-\vspace{2cm}
-\textbf{Project Manager}
-\begin{itemize}[noitemsep]
-	\item \textbf{FR-10}: View only projects assigned by the Administrator.
-	\item \textbf{FR-11}: View members belonging to assigned projects.
-	\item \textbf{FR-12}: View attendance records of members in assigned projects only.
-\end{itemize}
-
-\textbf{ETL \& System}
-\begin{itemize}[noitemsep]
-	\item \textbf{FR-13}: Extract attendance and HR data from BioTime and EasyProject on schedule.
-	\item \textbf{FR-14}: Resolve duplicate records, ID mismatches, and timezone differences.
-	\item \textbf{FR-15}: Store transformed and unified data in the main PostgreSQL database through \textbf{SQLAlchemy}.
-	\item \textbf{FR-16}: Provide real-time synchronization capabilities.
-\end{itemize}
-
-\textbf{Dashboard \& Reporting}
-\begin{itemize}[noitemsep]
-	\item The dashboard shall display KPIs (present employees, absences, late arrivals, overtime).
-	\item The system shall allow filtering by date range, project, and employee.
-	\item Reports shall be exportable in standard formats.
-\end{itemize}
-
-\subsection{Non-Functional Requirements}
-\begin{center}
-	\renewcommand{\arraystretch}{1.2}
-	\begin{tabular}{|l|l|>{\raggedright\arraybackslash}p{8cm}|}
+\begin{table}[H]
+\centering
+	\renewcommand{\arraystretch}{1.25}
+	\setlength{\tabcolsep}{6pt}
+	\begin{tabular}{|>{\raggedright\arraybackslash}p{3.3cm}|>{\centering\arraybackslash}p{2.1cm}|>{\raggedright\arraybackslash}p{8.8cm}|}
 		\hline
-		\textbf{Category} & \textbf{Requirement ID} & \textbf{Description} \\
+		\rowcolor{gray!20}
+		\textbf{Category} & \textbf{ID} & \textbf{Description} \\
 		\hline
-		Performance & NFR-01 & API endpoints shall respond within 300ms for standard queries on datasets up to 5,000 employees. \\
-		Security & NFR-02 & All API routes shall be protected by JWT-based authentication. Passwords shall be hashed using bcrypt. \\
-		Security & NFR-03 & Role-based access control (RBAC) shall enforce permission boundaries. \\
-		Reliability & NFR-04 & ETL shall handle source failures, log errors, and resume from the last successful sync point. \\
-		Data Integrity & NFR-05 & Duplicate attendance records shall be prevented through ETL deduplication and unique constraints. \\
-		Scalability & NFR-06 & The architecture shall support additional devices and new employee data sources. \\
-		Usability & NFR-07 & The React interface shall be responsive on desktop and tablet screens. \\
-		Maintainability & NFR-08 & Database migrations shall be managed with Alembic. \\
-		Portability & NFR-09 & The application shall be Docker-compatible for deployment flexibility. \\
+		\textbf{Administrator} & FR-01 & Create and manage user accounts with their assigned roles: Admin, HR, or Project Manager. \\
+		\cline{2-3}
+		 & FR-02 & Assign projects to Project Managers. \\
+		\hline
+		\textbf{Human Resources (HR)} & FR-03 & View all employees across the organization. \\
+		\cline{2-3}
+		 & FR-04 & View attendance records for all employees. \\
+		\cline{2-3}
+		 & FR-05 & View attendance leave information. \\
+		\hline
+		\textbf{Project Manager} & FR-06 & View only projects assigned by the Administrator. \\
+		\cline{2-3}
+		 & FR-07 & View members belonging to assigned projects. \\
+		\cline{2-3}
+		 & FR-08 & View attendance records only for members of assigned projects. \\
+		\hline
+		\textbf{ETL \& System} & FR-09 & Extract attendance and HR data from BioTime and EasyProject on schedule. \\
+		\cline{2-3}
+		 & FR-10 & Resolve duplicate records and identifier mismatches. \\
+		\cline{2-3}
+		 & FR-11 & Store transformed and unified data in the main PostgreSQL database through \textbf{SQLAlchemy}. \\
+		\cline{2-3}
+		 & FR-12 & Provide synchronization capabilities for keeping source data updated. \\
 		\hline
 	\end{tabular}
-\end{center}
+\caption{Functional requirements}
+\label{tab:functional-requirements}
+{\footnotesize\textit{Source: Author's work.}}
+\end{table}
+
+\subsection{Non-Functional Requirements}
+\begin{table}[H]
+\centering
+	\renewcommand{\arraystretch}{1.25}
+	\setlength{\tabcolsep}{6pt}
+	\begin{tabular}{|>{\raggedright\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{2.2cm}|>{\raggedright\arraybackslash}p{9.0cm}|}
+		\hline
+		\rowcolor{gray!20}
+		\textbf{Category} & \textbf{Requirement ID} & \textbf{Description} \\
+		\hline
+		\textbf{Performance} & NFR-01 & API endpoints shall provide fast response times for standard queries on large employee datasets. \\
+		\hline
+		\textbf{Security} & NFR-02 & All API routes shall be protected by JWT-based authentication. Passwords shall be hashed using bcrypt. \\
+		\cline{2-3}
+		 & NFR-03 & Role-based access control (RBAC) shall enforce permission boundaries. \\
+		\hline
+		\textbf{Reliability} & NFR-04 & ETL shall handle source failures and log errors clearly. \\
+		\hline
+		\textbf{Data Integrity} & NFR-05 & Duplicate attendance records shall be prevented through ETL deduplication and unique constraints. \\
+		\hline
+		\textbf{Scalability} & NFR-06 & The system shall remain easy to extend when new data is added. \\
+		\hline
+		\textbf{Usability} & NFR-07 & The React interface shall be responsive on desktop and tablet screens. \\
+		\hline
+		\textbf{Maintainability} & NFR-08 & Database migrations shall be managed with Alembic. \\
+		\hline
+		\textbf{Portability} & NFR-09 & The application shall be Docker-compatible for deployment flexibility. \\
+		\hline
+	\end{tabular}
+\caption{Non-functional requirements}
+\label{tab:non-functional-requirements}
+{\footnotesize\textit{Source: Author's work.}}
+\end{table}
 
 \section{Development Methodology: Scrum}
 \subsection{Why Scrum Was Chosen}
@@ -264,7 +281,8 @@ In the end, Scrum was chosen because it gave the best balance between structure 
 \end{itemize}
 
 \subsection{Sprint Plan}
-\begin{center}
+\begin{table}[H]
+\centering
 	\renewcommand{\arraystretch}{1.25}
 	\setlength{\tabcolsep}{7pt}
 	\begin{tabular}{|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{3.1cm}|>{\raggedright\arraybackslash}p{8cm}|}
@@ -272,85 +290,96 @@ In the end, Scrum was chosen because it gave the best balance between structure 
 		\rowcolor{gray!20}
 		\textbf{Sprint} & \textbf{Duration} & \textbf{Main Objective} \\
 		\hline
-		Sprint 1 & Week 1 -- Week 2 & Chapter 2 --- System analysis and design: study the source systems, define the required data scope, and prepare the main conception artifacts. \\
+		Sprint 0 & 2 weeks & Study the source systems, define the required data scope, and prepare the main conception artifacts for system analysis and design (Chapter 2). \\
 		\hline
-		Sprint 2 & Week 3 -- Week 4 & Chapter 3 --- ETL and unified database: implement the ETL pipelines and populate the centralized PostgreSQL database. \\
+		Sprint 1 & 2 weeks & Implement the ETL pipelines and populate the centralized PostgreSQL database for the ETL and unified database phase (Chapter 3). \\
 		\hline
-		Sprint 3 & Week 5 -- Week 6 & Chapter 4 --- Authentication module: implement login, registration, administrator approval, and role-based access control. \\
+		Sprint 2 & 2 weeks & Implement login, registration, administrator approval, and role-based access control for the authentication module (Chapter 4). \\
 		\hline
-		Sprint 4 & Week 7 -- Week 8 & Chapter 5 --- Administration module: deliver user management, project assignment, and synchronization settings features. \\
+		Sprint 3 & 2 weeks & Deliver user management, project assignment, and synchronization settings features for the administration module (Chapter 5). \\
 		\hline
-		Sprint 5 & Week 9 -- Week 10 & Chapter 6 --- HR functional modules: implement employee management, attendance follow-up, and leave handling interfaces. \\
+		Sprint 4 & 2 weeks & Implement employee management, attendance follow-up, and leave handling interfaces for the HR functional modules (Chapter 6). \\
 		\hline
-		Sprint 6 & Week 11 -- Week 12 & Chapter 7 --- Project Manager modules: deliver project, member, and attendance monitoring features for project managers. \\
+		Sprint 5 & 2 weeks & Deliver project, member, and attendance monitoring features for project managers through the Project Manager modules (Chapter 7). \\
 		\hline
-		Sprint 7 & Week 13 -- Week 14 & Chapter 8 --- RH Agent integration: integrate the RH Agent and finalize the intelligent assistance workflow. \\
+		Sprint 6 & 2 weeks & Integrate the RH Agent and finalize the intelligent assistance workflow for the RH Agent integration phase (Chapter 8). \\
 		\hline
 	\end{tabular}
-\end{center}
+\caption{Sprint plan}
+\label{tab:sprint-plan}
+{\footnotesize\textit{Source: Author's work.}}
+\end{table}
 
 \section{Chosen Technologies and Rationale}
 To solve the integration problem between different systems while still building a maintainable full-stack solution, a focused technology stack was selected. This choice was guided by compatibility, reliability, development speed, and long-term maintainability.
 \section{Technology Stack Table}
 \renewcommand{\arraystretch}{1.1}
 \footnotesize
-\begin{center}
-	\begin{tabular}{|>{\centering\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{5.0cm}|>{\raggedright\arraybackslash}p{5.0cm}|}
-		\hline
-		\textbf{Icon} & \textbf{Technology} & \textbf{Description} & \textbf{Why I Chose It} \\
-		\hline
-		\TechIcon{logos/tech/sqlalchemy.pdf} & \textbf{SQLAlchemy} & Python ORM and SQL toolkit used in ETL and backend data access. & One clear way to work with both PostgreSQL and MySQL, which reduces complexity and repeated logic. \\
-		\hline
-		\TechIcon{logos/tech/fastapi.pdf} & \textbf{FastAPI} & Framework used to build REST APIs with validation and automatic documentation. & It allowed rapid API development with a clean structure and good performance. \\
-		\hline
-		{\scriptsize ALEMBIC} & \textbf{Alembic} & Tool used to manage and track database schema changes. & It keeps database changes clear, safe, and easy to track. \\
-		\hline
-		\TechIcon{logos/tech/postgresql.pdf} & \textbf{PostgreSQL} & Main unified relational database for transformed attendance and HR data. & Reliable, stable, and well suited for both daily operations and structured reporting. \\
-		\hline
-		\IfFileExists{logos/tech/redis.pdf}{\TechIcon{logos/tech/redis.pdf}}{\scriptsize REDIS} & \textbf{Redis} & In-memory data store used to speed up temporary data access and support fast backend operations. & Useful when low-latency access is needed for cached or short-lived data. \\
-		\hline
-		\TechIcon{logos/tech/mysql.pdf} & \textbf{MySQL (Source)} & Source database used by EasyProject and read by ETL jobs. & It let us integrate existing company data without changing the legacy system. \\
-		\hline
-		\TechIcon{logos/tech/resend.pdf} & \textbf{Resend} & Email delivery service for notifications and account communication. & Simple to use and reliable for sending account and notification emails. \\
-		\hline
-		\TechIcon{logos/tech/docker.pdf} & \textbf{Docker} & Platform used to package backend services and their dependencies. & It makes setup easier and keeps environments consistent. \\
-		\hline
-		\TechIcon{logos/tech/react.pdf} & \textbf{React} & Frontend library used to build dynamic interfaces with reusable components. & It made the interface easier to organize and reuse. \\
-		\hline
-	\end{tabular}
-\end{center}
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{5.0cm}|>{\raggedright\arraybackslash}p{5.0cm}|}
+	\hline
+	\textbf{Icon} & \textbf{Technology} & \textbf{Description} & \textbf{Why I Chose It} \\
+	\hline
+	\TechIcon{logos/tech/sqlalchemy.pdf} & \textbf{SQLAlchemy} & Python ORM and SQL toolkit used in ETL and backend data access. & One clear way to work with both PostgreSQL and MySQL, which reduces complexity and repeated logic. \\
+	\hline
+	\TechIcon{logos/tech/fastapi.pdf} & \textbf{FastAPI} & Framework used to build REST APIs with validation and automatic documentation. & It allowed rapid API development with a clean structure and good performance. \\
+	\hline
+	{\scriptsize ALEMBIC} & \textbf{Alembic} & Tool used to manage and track database schema changes. & It keeps database changes clear, safe, and easy to track. \\
+	\hline
+	\TechIcon{logos/tech/postgresql.pdf} & \textbf{PostgreSQL} & Main unified relational database for transformed attendance and HR data. & Reliable, stable, and well suited for both daily operations and structured reporting. \\
+	\hline
+	\IfFileExists{logos/tech/redis.pdf}{\TechIcon{logos/tech/redis.pdf}}{\scriptsize REDIS} & \textbf{Redis} & In-memory data store used to speed up temporary data access and support fast backend operations. & Useful when low-latency access is needed for cached or short-lived data. \\
+	\hline
+	\TechIcon{logos/tech/mysql.pdf} & \textbf{MySQL (Source)} & Source database used by EasyProject and read by ETL jobs. & It let us integrate existing company data without changing the legacy system. \\
+	\hline
+	\TechIcon{logos/tech/resend.pdf} & \textbf{Resend} & Email delivery service for notifications and account communication. & Simple to use and reliable for sending account and notification emails. \\
+	\hline
+	\TechIcon{logos/tech/docker.pdf} & \textbf{Docker} & Platform used to package backend services and their dependencies. & It makes setup easier and keeps environments consistent. \\
+	\hline
+	\TechIcon{logos/tech/react.pdf} & \textbf{React} & Frontend library used to build dynamic interfaces with reusable components. & It made the interface easier to organize and reuse. \\
+	\hline
+\end{tabular}
+\caption{Technology stack and rationale, part 1}
+\label{tab:technology-stack-part1}
+{\footnotesize\textit{Source: Author's work, based on project technology choices.}}
+\end{table}
 
 \vspace{0.4cm}
 
-\begin{center}
-	\begin{tabular}{|>{\centering\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{5.0cm}|>{\raggedright\arraybackslash}p{5.0cm}|}
-		\hline
-		\textbf{Icon} & \textbf{Technology} & \textbf{Description} & \textbf{Why I Chose It} \\
-		\hline
-		\TechIcon{logos/tech/tailwindcss.pdf} & \textbf{Tailwind CSS} & CSS framework used to style the interface quickly. & It helped us build pages faster with a more consistent design. \\
-		\hline
-		\TechIcon{logos/tech/shadcn-ui.pdf} & \textbf{shadcn/ui} & Reusable UI components built on top of Radix and Tailwind. & It helped us create clean interfaces faster while keeping flexibility. \\
-		\hline
-		\TechIcon{logos/tech/tanstack.pdf} & \textbf{TanStack Table} & Table library used for sorting, filtering, and pagination. & It was very useful for large employee and attendance tables. \\
-		\hline
-		\TechIcon{logos/tech/tanstack.pdf} & \textbf{TanStack Query} & Library used for API state management and caching. & It improved performance and made async data handling cleaner. \\
-		\hline
-		\TechIcon{logos/tech/langgraph.pdf} & \textbf{LangGraph} & Framework used to build stateful, multi-step LLM workflows and agent graphs. & It was useful for organizing the RH Agent flow in a controlled way. \\
-		\hline
-		\TechIcon{logos/tech/langchain.pdf} & \textbf{LangChain} & Framework used for prompt chaining, tool use, and retrieval integration. & It made AI feature integration faster and easier. \\
-		\hline
-		\TechIcon{logos/tech/ollama.pdf} & \textbf{Ollama} & Local runtime used to serve open-source language models on private infrastructure. & It allowed private AI inference that fits company data-security needs. \\
-		\hline
-		\IfFileExists{logos/tech/vscode.pdf}{\TechIcon{logos/tech/vscode.pdf}}{\scriptsize VS CODE} & \textbf{VS Code} & Lightweight and extensible editor used for frontend and backend development. & It gave a fast editing experience with many useful extensions. \\
-		\hline
-		\IfFileExists{logos/tech/pycharm.pdf}{\TechIcon{logos/tech/pycharm.pdf}}{\scriptsize PYCHARM} & \textbf{PyCharm} & Python IDE used for backend and ETL development. & It made Python development easier with good debugging and code tools. \\
-		\hline
-		\IfFileExists{logos/tech/git.pdf}{\TechIcon{logos/tech/git.pdf}}{\scriptsize GIT} & \textbf{Git} & Version control system used to track and manage source code changes. & It made collaboration and sprint work safer and easier to manage. \\
-		\hline
-		\IfFileExists{logos/tech/github.pdf}{\TechIcon{logos/tech/github.pdf}}{\scriptsize GITHUB} & \textbf{GitHub} & Remote repository hosting and collaboration platform built around Git. & It helped the team share code, review changes, and stay organized. \\
-		\hline
-	\end{tabular}
-\end{center}
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{5.0cm}|>{\raggedright\arraybackslash}p{5.0cm}|}
+	\hline
+	\textbf{Icon} & \textbf{Technology} & \textbf{Description} & \textbf{Why I Chose It} \\
+	\hline
+	\TechIcon{logos/tech/tailwindcss.pdf} & \textbf{Tailwind CSS} & CSS framework used to style the interface quickly. & It helped us build pages faster with a more consistent design. \\
+	\hline
+	\TechIcon{logos/tech/shadcn-ui.pdf} & \textbf{shadcn/ui} & Reusable UI components built on top of Radix and Tailwind. & It helped us create clean interfaces faster while keeping flexibility. \\
+	\hline
+	\TechIcon{logos/tech/tanstack.pdf} & \textbf{TanStack Table} & Table library used for sorting, filtering, and pagination. & It was very useful for large employee and attendance tables. \\
+	\hline
+	\TechIcon{logos/tech/tanstack.pdf} & \textbf{TanStack Query} & Library used for API state management and caching. & It improved performance and made async data handling cleaner. \\
+	\hline
+	\TechIcon{logos/tech/langgraph.pdf} & \textbf{LangGraph} & Framework used to build stateful, multi-step LLM workflows and agent graphs. & It was useful for organizing the RH Agent flow in a controlled way. \\
+	\hline
+	\TechIcon{logos/tech/langchain.pdf} & \textbf{LangChain} & Framework used for prompt chaining, tool use, and retrieval integration. & It made AI feature integration faster and easier. \\
+	\hline
+	\TechIcon{logos/tech/ollama.pdf} & \textbf{Ollama} & Local runtime used to serve open-source language models on private infrastructure. & It allowed private AI inference that fits company data-security needs. \\
+	\hline
+	\IfFileExists{logos/tech/vscode.pdf}{\TechIcon{logos/tech/vscode.pdf}}{\scriptsize VS CODE} & \textbf{VS Code} & Lightweight and extensible editor used for frontend and backend development. & It gave a fast editing experience with many useful extensions. \\
+	\hline
+	\IfFileExists{logos/tech/pycharm.pdf}{\TechIcon{logos/tech/pycharm.pdf}}{\scriptsize PYCHARM} & \textbf{PyCharm} & Python IDE used for backend and ETL development. & It made Python development easier with good debugging and code tools. \\
+	\hline
+	\IfFileExists{logos/tech/git.pdf}{\TechIcon{logos/tech/git.pdf}}{\scriptsize GIT} & \textbf{Git} & Version control system used to track and manage source code changes. & It made collaboration and sprint work safer and easier to manage. \\
+	\hline
+	\IfFileExists{logos/tech/github.pdf}{\TechIcon{logos/tech/github.pdf}}{\scriptsize GITHUB} & \textbf{GitHub} & Remote repository hosting and collaboration platform built around Git. & It helped the team share code, review changes, and stay organized. \\
+	\hline
+\end{tabular}
+\caption{Technology stack and rationale, part 2}
+\label{tab:technology-stack-part2}
+{\footnotesize\textit{Source: Author's work, based on project technology choices.}}
+\end{table}
 \normalsize
 
 Overall, this stack helped address the main project challenge: connecting two separate source systems, exposing secure and maintainable APIs, and building a responsive interface for day-to-day follow-up.
@@ -359,4 +388,3 @@ Overall, this stack helped address the main project challenge: connecting two se
 This chapter established the foundation of the project by presenting the organizational context and the main challenge created by the coexistence of two isolated systems: BioTime and EasyProject.
 
 The proposed response is a unified architecture built around an ETL pipeline, a consolidated PostgreSQL database, a FastAPI backend, and a React web dashboard designed to ensure reliable and conflict-free attendance monitoring.
-
