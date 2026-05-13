@@ -13,67 +13,66 @@
 \contentsline {chapter}{\numberline {1}General Framework of the Project}{11}{chapter.1}%
 \contentsline {section}{\numberline {1}General Context of the Project}{12}{section.1.1}%
 \contentsline {section}{\numberline {2}Company Presentation}{12}{section.1.2}%
-\contentsline {subsection}{\numberline {2.1}Organizational Chart}{12}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {2.2}Existing Information Systems}{14}{subsection.1.2.2}%
-\contentsline {section}{\numberline {3}Problem Statement}{15}{section.1.3}%
-\contentsline {subsection}{\numberline {3.1}Identified Pain Points}{15}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {3.2}Project Objective}{15}{subsection.1.3.2}%
-\contentsline {section}{\numberline {4}Requirements Analysis}{16}{section.1.4}%
-\contentsline {subsection}{\numberline {4.1}Functional Requirements}{16}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {4.2}Non-Functional Requirements}{17}{subsection.1.4.2}%
-\contentsline {section}{\numberline {5}Development Methodology: Scrum}{17}{section.1.5}%
-\contentsline {subsection}{\numberline {5.1}Why Scrum Was Chosen}{17}{subsection.1.5.1}%
-\contentsline {subsubsection}{(a) Requirements were not fully clear from the start}{17}{section*.9}%
-\contentsline {subsubsection}{(b) The internship duration was limited}{18}{section*.10}%
-\contentsline {subsubsection}{(c) The project was divided into several parts}{18}{section*.11}%
-\contentsline {subsubsection}{(d) Technical problems needed iterative work}{18}{section*.12}%
-\contentsline {subsubsection}{(e) Scrum vs. Waterfall}{18}{section*.13}%
-\contentsline {subsubsection}{(f) Scrum vs. Kanban}{18}{section*.14}%
-\contentsline {subsubsection}{(g) Final choice}{19}{section*.15}%
-\contentsline {subsection}{\numberline {5.2}Scrum Framework Overview}{19}{subsection.1.5.2}%
-\contentsline {subsubsection}{Roles}{19}{section*.16}%
-\contentsline {subsubsection}{Artifacts}{19}{section*.17}%
-\contentsline {subsubsection}{Ceremonies}{19}{section*.18}%
-\contentsline {subsection}{\numberline {5.3}Sprint Plan}{20}{subsection.1.5.3}%
-\contentsline {section}{\numberline {6}Chosen Technologies and Rationale}{20}{section.1.6}%
-\contentsline {section}{\numberline {7}Technology Stack Table}{21}{section.1.7}%
-\contentsline {section}{\numberline {8}Chapter Conclusion}{23}{section.1.8}%
-\contentsline {chapter}{\numberline {2}System Analysis and Design}{24}{chapter.2}%
-\contentsline {section}{\numberline {1}Introduction}{25}{section.2.1}%
-\contentsline {section}{\numberline {2}Sprint Backlog}{25}{section.2.2}%
-\contentsline {section}{\numberline {3}Sprint Design}{25}{section.2.3}%
-\contentsline {subsection}{\numberline {3.1}Global System Architecture}{25}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {3.2}Actors and Access Scope}{27}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {3.3}Functional Scope of the Sprint}{27}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {3.4}Global Use Case Diagram}{27}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {3.5}Main Use Cases Description}{29}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {3.6}Source Systems Exploration and Table Selection}{29}{subsection.2.3.6}%
-\contentsline {section}{\numberline {4}Conception}{32}{section.2.4}%
-\contentsline {subsection}{\numberline {4.1}Class Diagram}{32}{subsection.2.4.1}%
-\contentsline {section}{\numberline {5}Sprint Outcomes}{33}{section.2.5}%
-\contentsline {subsection}{\numberline {5.1}Main Deliverables of Sprint 0}{33}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {5.2}Sprint Outcome: View Layer for ETL Simplification}{33}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {5.3}Sprint Outcome: Unified PostgreSQL Target Schema and Integration Constraints}{36}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {5.4}Sprint 0 Contribution to the Next Sprints}{37}{subsection.2.5.4}%
-\contentsline {section}{\numberline {6}Chapter Conclusion}{37}{section.2.6}%
-\contentsline {chapter}{\numberline {3}ETL and Unified Database}{38}{chapter.3}%
-\contentsline {section}{\numberline {1}Introduction}{39}{section.3.1}%
-\contentsline {section}{\numberline {2}Sprint Backlog}{39}{section.3.2}%
-\contentsline {section}{\numberline {3}Sprint Design}{39}{section.3.3}%
-\contentsline {subsection}{\numberline {3.1}Refinement of data rules and ETL mappings}{39}{subsection.3.3.1}%
-\contentsline {section}{\numberline {4}Conception}{40}{section.3.4}%
-\contentsline {subsection}{\numberline {4.1}ETL Pipeline Architecture}{40}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {4.2}Data Validation and Control Flow}{42}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {4.3}Key Design Advantages}{43}{subsection.3.4.3}%
-\contentsline {section}{\numberline {5}Sprint Realization}{43}{section.3.5}%
-\contentsline {subsection}{\numberline {5.1}Implementation outcomes}{43}{subsection.3.5.1}%
-\contentsline {section}{\numberline {6}Conclusion}{44}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Authentication and Access Control}{45}{chapter.4}%
-\contentsline {section}{\numberline {1}Introduction}{46}{section.4.1}%
-\contentsline {section}{\numberline {2}Sprint Backlog}{46}{section.4.2}%
-\contentsline {section}{\numberline {3}Sprint Design}{46}{section.4.3}%
-\contentsline {section}{\numberline {4}Conception}{47}{section.4.4}%
-\contentsline {subsection}{\numberline {4.1}Use Case Refinement}{47}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {2.1}Existing Information Systems}{12}{subsection.1.2.1}%
+\contentsline {section}{\numberline {3}Problem Statement}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {3.1}Identified Pain Points}{14}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {3.2}Project Objective}{14}{subsection.1.3.2}%
+\contentsline {section}{\numberline {4}Requirements Analysis}{15}{section.1.4}%
+\contentsline {subsection}{\numberline {4.1}Functional Requirements}{15}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {4.2}Non-Functional Requirements}{16}{subsection.1.4.2}%
+\contentsline {section}{\numberline {5}Development Methodology: Scrum}{16}{section.1.5}%
+\contentsline {subsection}{\numberline {5.1}Why Scrum Was Chosen}{16}{subsection.1.5.1}%
+\contentsline {subsubsection}{(a) Requirements were not fully clear from the start}{16}{section*.9}%
+\contentsline {subsubsection}{(b) The internship duration was limited}{17}{section*.10}%
+\contentsline {subsubsection}{(c) The project was divided into several parts}{17}{section*.11}%
+\contentsline {subsubsection}{(d) Technical problems needed iterative work}{17}{section*.12}%
+\contentsline {subsubsection}{(e) Scrum vs. Waterfall}{17}{section*.13}%
+\contentsline {subsubsection}{(f) Scrum vs. Kanban}{17}{section*.14}%
+\contentsline {subsubsection}{(g) Final choice}{18}{section*.15}%
+\contentsline {subsection}{\numberline {5.2}Scrum Framework Overview}{18}{subsection.1.5.2}%
+\contentsline {subsubsection}{Roles}{18}{section*.16}%
+\contentsline {subsubsection}{Artifacts}{18}{section*.17}%
+\contentsline {subsubsection}{Ceremonies}{18}{section*.18}%
+\contentsline {subsection}{\numberline {5.3}Sprint Plan}{19}{subsection.1.5.3}%
+\contentsline {section}{\numberline {6}Chosen Technologies and Rationale}{19}{section.1.6}%
+\contentsline {section}{\numberline {7}Technology Stack Table}{20}{section.1.7}%
+\contentsline {section}{\numberline {8}Chapter Conclusion}{22}{section.1.8}%
+\contentsline {chapter}{\numberline {2}System Analysis and Design}{23}{chapter.2}%
+\contentsline {section}{\numberline {1}Introduction}{24}{section.2.1}%
+\contentsline {section}{\numberline {2}Sprint Backlog}{24}{section.2.2}%
+\contentsline {section}{\numberline {3}Sprint Design}{24}{section.2.3}%
+\contentsline {subsection}{\numberline {3.1}Global System Architecture}{24}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {3.2}Actors and Access Scope}{26}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {3.3}Functional Scope of the Sprint}{26}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {3.4}Global Use Case Diagram}{26}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {3.5}Main Use Cases Description}{27}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {3.6}Source Systems Exploration and Table Selection}{28}{subsection.2.3.6}%
+\contentsline {section}{\numberline {4}Conception}{31}{section.2.4}%
+\contentsline {subsection}{\numberline {4.1}Class Diagram}{31}{subsection.2.4.1}%
+\contentsline {section}{\numberline {5}Sprint Outcomes}{32}{section.2.5}%
+\contentsline {subsection}{\numberline {5.1}Main Deliverables of Sprint 0}{32}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {5.2}Sprint Outcome: View Layer for ETL Simplification}{32}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {5.3}Sprint Outcome: Unified PostgreSQL Target Schema and Integration Constraints}{35}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {5.4}Sprint 0 Contribution to the Next Sprints}{36}{subsection.2.5.4}%
+\contentsline {section}{\numberline {6}Chapter Conclusion}{36}{section.2.6}%
+\contentsline {chapter}{\numberline {3}ETL and Unified Database}{37}{chapter.3}%
+\contentsline {section}{\numberline {1}Introduction}{38}{section.3.1}%
+\contentsline {section}{\numberline {2}Sprint Backlog}{38}{section.3.2}%
+\contentsline {section}{\numberline {3}Sprint Design}{38}{section.3.3}%
+\contentsline {subsection}{\numberline {3.1}Refinement of data rules and ETL mappings}{38}{subsection.3.3.1}%
+\contentsline {section}{\numberline {4}Conception}{39}{section.3.4}%
+\contentsline {subsection}{\numberline {4.1}ETL Pipeline Architecture}{39}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {4.2}Data Validation and Control Flow}{41}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {4.3}Key Design Advantages}{42}{subsection.3.4.3}%
+\contentsline {section}{\numberline {5}Sprint Realization}{42}{section.3.5}%
+\contentsline {subsection}{\numberline {5.1}Implementation outcomes}{42}{subsection.3.5.1}%
+\contentsline {section}{\numberline {6}Conclusion}{43}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Authentication and Access Control}{44}{chapter.4}%
+\contentsline {section}{\numberline {1}Introduction}{45}{section.4.1}%
+\contentsline {section}{\numberline {2}Sprint Backlog}{45}{section.4.2}%
+\contentsline {section}{\numberline {3}Sprint Design}{45}{section.4.3}%
+\contentsline {section}{\numberline {4}Conception}{46}{section.4.4}%
+\contentsline {subsection}{\numberline {4.1}Use Case Refinement}{46}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.2}Detailed Sequence Diagrams}{49}{subsection.4.4.2}%
 \contentsline {section}{\numberline {5}Sprint Realization}{52}{section.4.5}%
 \contentsline {subsection}{\numberline {5.1}Authentication Interface}{52}{subsection.4.5.1}%
@@ -126,9 +125,9 @@
 \contentsline {subsection}{\numberline {4.1}Project Manager use case diagram}{74}{subsection.7.4.1}%
 \contentsline {section}{\numberline {5}Sprint Realization}{75}{section.7.5}%
 \contentsline {subsection}{\numberline {5.1}Implementation outcomes}{75}{subsection.7.5.1}%
-\contentsline {subsection}{\numberline {5.2}Projects page interface}{76}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {5.2}Projects page interface}{75}{subsection.7.5.2}%
 \contentsline {subsection}{\numberline {5.3}Members page interface}{76}{subsection.7.5.3}%
-\contentsline {subsection}{\numberline {5.4}Members attendance monitoring interface}{77}{subsection.7.5.4}%
+\contentsline {subsection}{\numberline {5.4}Members attendance monitoring interface}{76}{subsection.7.5.4}%
 \contentsline {section}{\numberline {6}Conclusion}{77}{section.7.6}%
 \contentsline {chapter}{\numberline {8}RH Agent Integration}{78}{chapter.8}%
 \contentsline {section}{\numberline {1}Introduction}{79}{section.8.1}%

@@ -1,6 +1,6 @@
 
 % !TEX program = pdflatex
-\documentclass[a4paper,12pt]{report} 
+\documentclass[a4paper,12pt]{report}
 
 % ------------------ Packages ------------------
 \usepackage[utf8]{inputenc}
@@ -32,10 +32,10 @@
 
 % Page Paddings
 \geometry{
-    left=2cm,
-    right=1.5cm, 
-    top=2.5cm,
-    bottom=3cm
+	left=2cm,
+	right=1.5cm, 
+	top=2.5cm,
+	bottom=3cm
 }
 
 \raggedbottom
@@ -56,131 +56,131 @@
 \definecolor{myborder}{HTML}{336699}  % your color #336699
 
 \newcommand\PageBorder{%
-  \begin{tikzpicture}[remember picture,overlay]
-      \draw[line width=1.5pt, myborder]  % ← use the name here
-            ($(current page.north west)+(1.3cm,-1.3cm)$)
-                  rectangle
-                        ($(current page.south east)+(-1.3cm,1.3cm)$);
-                            \draw[line width=2.5pt, myborder]
-                                  ($(current page.north west)+(1.4cm,-1.4cm)$)
-                                        rectangle
-                                              ($(current page.south east)+(-1.4cm,1.4cm)$);
-                                                \end{tikzpicture}%
-                                                }
+	\begin{tikzpicture}[remember picture,overlay]
+		\draw[line width=1.5pt, myborder]  % ← use the name here
+		($(current page.north west)+(1.3cm,-1.3cm)$)
+		rectangle
+		($(current page.south east)+(-1.3cm,1.3cm)$);
+		\draw[line width=2.5pt, myborder]
+		($(current page.north west)+(1.4cm,-1.4cm)$)
+		rectangle
+		($(current page.south east)+(-1.4cm,1.4cm)$);
+	\end{tikzpicture}%
+}
 
 
-                                                % ------------------ Technology Icons ------------------
-                                                \newcommand{\TechIcon}[2][0.68cm]{%
-                                                  \makebox[1.5cm][c]{\includegraphics[width=#1,height=#1,keepaspectratio]{#2}}%
-                                                  }
+% ------------------ Technology Icons ------------------
+\newcommand{\TechIcon}[2][0.68cm]{%
+	\makebox[1.5cm][c]{\includegraphics[width=#1,height=#1,keepaspectratio]{#2}}%
+}
 
-                                                  
+
 
 % ------------------ Document ------------------
 \begin{document}
-\dominitoc
-\setcounter{minitocdepth}{2}
-\hypersetup{pageanchor=false}
-%----------- set the border for the first page only
-\AddToShipoutPictureBG*{\PageBorder}
-%------------------ The first page or the Title page ------------------
-
-\begin{titlepage}
-\begin{center}
-
-% ------------------ Header ------------------
-\textbf{Tunisian Republic}\\[0.2cm]
-\textbf{Ministry of Higher Education and Scientific Research}\\[0.5cm]
-\begin{center}
-  \begin{minipage}{0.22\textwidth}
-    \centering
-    \includegraphics[width=2cm]{logos/utm-header.png}
-  \end{minipage}%
-  \hfill
-  \begin{minipage}{0.50\textwidth}
-    \centering
-    \large\textbf{University of Tunis El Manar}\\
-    \small\textbf{{Faculty of Economics and Management of Tunis}}
-  \end{minipage}%
-  \hfill
-  \begin{minipage}{0.22\textwidth}
-    \centering
-    \includegraphics[width=3cm]{logos/logo_fsegt.png}
-  \end{minipage}
-  \hfill
-  
-\end{center}
-
-
-
-% ------------------ Title ------------------
-{\LARGE\textbf{FINAL YEAR PROJECT}}\\[1cm]
-
-Submitted in partial fulfillment of the requirements for the degree:\\[0.3cm]
-{\Large\textbf{Bachelor's Degree in Business Intelligence}}\\[1.2cm]
-
-% ------------------ PFE Title Box ------------------
-\fbox{
-\parbox{0.85\textwidth}{
-\centering
-\vspace{0.4cm}
-{\Large\textcolor{blue}{\textbf{Design and Implementation of a Centralized Workforce Attendance Supervision System}}}
-\vspace{0.4cm}
-}
-}
-
-\vspace{1.2cm}
-
-% ------------------ Organization ------------------
-\textbf{Host Organization}\\[0.3cm]
-\textbf{OneTech Business Solution}\\[0.2cm]
- \begin{minipage}{0.22\textwidth}
-    \centering
-    \includegraphics[width=2cm]{logos/onetech_b_s_logo.jpeg}
-  \end{minipage}%
-\\[1.2cm]
-
-% ------------------ Author ------------------
-\textbf{PREPARED BY}\\[0.3cm]
- Mr \textbf{Samaali Bassem}\\[0.5cm]
-
-% ------------------ Supervisors ------------------
-\textbf{SUPERVISED BY}\\[0.4cm]
-Professor Besma BEN AMARA\\
-(Academic supervisor)\\[0.3cm]
-Mr Maher Daassi\\
-(Professional supervisor)\\[1.5cm]
-
-% ------------------ Year ------------------
-\textbf{ACADEMIC YEAR: 2025-2026}
-
-\end{center}
-\end{titlepage}
-
-%------------------ Acknowledgements page ------------------
-\input{chapters/01-acknowledgements.tex}
-
-\input{chapters/02-list-of-abbreviations.tex}
-
-\input{chapters/02b-general-introduction.tex}
-
-\input{chapters/03-general-introduction.tex}
-
-\input{chapters/04-system-analysis-and-design.tex}
-
-\input{chapters/05-etl-and-unified-database.tex}
-
-\input{chapters/06-authentication-module.tex}
-
-\input{chapters/07-administration-module.tex}
-
-\input{chapters/08-hr-functional-modules.tex}
-
-\input{chapters/09-project-manager-modules.tex}
-
-\input{chapters/10-rh-agent-integration.tex}
-
-\input{chapters/11-references.tex}
-
-
+	\dominitoc
+	\setcounter{minitocdepth}{2}
+	\hypersetup{pageanchor=false}
+	%----------- set the border for the first page only
+	\AddToShipoutPictureBG*{\PageBorder}
+	%------------------ The first page or the Title page ------------------
+	
+	\begin{titlepage}
+		\begin{center}
+			
+			% ------------------ Header ------------------
+			\textbf{Tunisian Republic}\\[0.2cm]
+			\textbf{Ministry of Higher Education and Scientific Research}\\[0.5cm]
+			\begin{center}
+				\begin{minipage}{0.22\textwidth}
+					\centering
+					\includegraphics[width=2cm]{logos/utm-header.png}
+				\end{minipage}%
+				\hfill
+				\begin{minipage}{0.50\textwidth}
+					\centering
+					\large\textbf{University of Tunis El Manar}\\
+					\small\textbf{{Faculty of Economics and Management of Tunis}}
+				\end{minipage}%
+				\hfill
+				\begin{minipage}{0.22\textwidth}
+					\centering
+					\includegraphics[width=3cm]{logos/logo_fsegt.png}
+				\end{minipage}
+				\hfill
+				
+			\end{center}
+			
+			
+			
+			% ------------------ Title ------------------
+			{\LARGE\textbf{FINAL YEAR PROJECT}}\\[1cm]
+			
+			Submitted in partial fulfillment of the requirements for the degree:\\[0.3cm]
+			{\Large\textbf{Bachelor's Degree in Business Intelligence}}\\[1.2cm]
+			
+			% ------------------ PFE Title Box ------------------
+			\fbox{
+				\parbox{0.85\textwidth}{
+					\centering
+					\vspace{0.4cm}
+					{\Large\textcolor{blue}{\textbf{Design and Implementation of a Centralized Workforce Attendance Supervision System}}}
+					\vspace{0.4cm}
+				}
+			}
+			
+			\vspace{1.2cm}
+			
+			% ------------------ Organization ------------------
+			\textbf{Host Organization}\\[0.3cm]
+			\textbf{OneTech Business Solution}\\[0.2cm]
+			\begin{minipage}{0.22\textwidth}
+				\centering
+				\includegraphics[width=2cm]{logos/onetech_b_s_logo.jpeg}
+			\end{minipage}%
+			\\[1.2cm]
+			
+			% ------------------ Author ------------------
+			\textbf{PREPARED BY}\\[0.3cm]
+			Mr \textbf{Samaali Bassem}\\[0.5cm]
+			
+			% ------------------ Supervisors ------------------
+			\textbf{SUPERVISED BY}\\[0.4cm]
+			Professor Besma BEN AMARA\\
+			(Academic supervisor)\\[0.3cm]
+			Mr Maher Daassi\\
+			(Professional supervisor)\\[1.5cm]
+			
+			% ------------------ Year ------------------
+			\textbf{ACADEMIC YEAR: 2025-2026}
+			
+		\end{center}
+	\end{titlepage}
+	
+	%------------------ Acknowledgements page ------------------
+	\input{chapters/01-acknowledgements.tex}
+	
+	\input{chapters/02-list-of-abbreviations.tex}
+	
+	\input{chapters/02b-general-introduction.tex}
+	
+	\input{chapters/03-general-introduction.tex}
+	
+	\input{chapters/04-system-analysis-and-design.tex}
+	
+	\input{chapters/05-etl-and-unified-database.tex}
+	
+	\input{chapters/06-authentication-module.tex}
+	
+	\input{chapters/07-administration-module.tex}
+	
+	\input{chapters/08-hr-functional-modules.tex}
+	
+	\input{chapters/09-project-manager-modules.tex}
+	
+	\input{chapters/10-rh-agent-integration.tex}
+	
+	\input{chapters/11-references.tex}
+	
+	
 \end{document}

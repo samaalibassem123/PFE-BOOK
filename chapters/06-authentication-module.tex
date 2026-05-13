@@ -6,9 +6,9 @@ This chapter presents Sprint 2, focused on Authentication and Access Control. Th
 
 These features are designed to:
 \begin{itemize}[noitemsep]
-    \item Protect sensitive data.
-    \item Restrict access to authorized users only.
-    \item Enforce role-based access (Admin, HR, Project Manager).
+	\item Protect sensitive data.
+	\item Restrict access to authorized users only.
+	\item Enforce role-based access (Admin, HR, Project Manager).
 \end{itemize}
 
 The authentication flow adds one extra validation step: newly registered users must be approved by an administrator before they can access the system.
@@ -17,55 +17,55 @@ The authentication flow adds one extra validation step: newly registered users m
 During Sprint 2, we selected and implemented the following backlog items:
 
 \begin{table}[H]
-\centering
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|l|>{\raggedright\arraybackslash}p{9.2cm}|l|}
-\hline
-\textbf{ID} & \textbf{Backlog Item} & \textbf{Priority} \\
-\hline
-S2-BL-01 & Implement login using email and password credentials. & High \\
-\hline
-S2-BL-02 & Implement account registration for HR and Project Manager roles. & High \\
-\hline
-S2-BL-03 & Implement administrator approval for newly registered user accounts. & High \\
-\hline
-S2-BL-04 & Add email-based OTP verification during Administrator login. & High \\
-\hline
-S2-BL-05 & Send an email notification after account approval. & Medium \\
-\hline
-S2-BL-06 & Block application access for unapproved user accounts. & High \\
-\hline
-\end{tabular}
-\caption{Sprint 2 backlog}
-\label{tab:sprint-2-backlog}
-{\footnotesize\textit{Source: Author's work.}}
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|l|>{\raggedright\arraybackslash}p{9.2cm}|l|}
+		\hline
+		\textbf{ID} & \textbf{Backlog Item} & \textbf{Priority} \\
+		\hline
+		S2-BL-01 & Implement login using email and password credentials. & High \\
+		\hline
+		S2-BL-02 & Implement account registration for HR and Project Manager roles. & High \\
+		\hline
+		S2-BL-03 & Implement administrator approval for newly registered user accounts. & High \\
+		\hline
+		S2-BL-04 & Add email-based OTP verification during Administrator login. & High \\
+		\hline
+		S2-BL-05 & Send an email notification after account approval. & Medium \\
+		\hline
+		S2-BL-06 & Block application access for unapproved user accounts. & High \\
+		\hline
+	\end{tabular}
+	\caption{Sprint 2 backlog}
+	\label{tab:sprint-2-backlog}
+	{\footnotesize\textit{Source: Author's work.}}
 \end{table}
 
 \section{Sprint Design}
 \textbf{Login}
 \begin{itemize}[noitemsep]
-    \item The user enters email and password.
-    \item The system verifies credentials.
-    \item If credentials are incorrect, an error message is displayed.
-    \item If credentials are correct but the account is not approved, access is denied.
-    \item If the user is an Admin, the system sends an OTP code to the admin email.
-    \item The Admin enters the OTP code for an extra verification step.
-    \item If the OTP code is correct, access is granted.
-    \item For other approved users, access is granted directly.
+	\item The user enters email and password.
+	\item The system verifies credentials.
+	\item If credentials are incorrect, an error message is displayed.
+	\item If credentials are correct but the account is not approved, access is denied.
+	\item If the user is an Admin, the system sends an OTP code to the admin email.
+	\item The Admin enters the OTP code for an extra verification step.
+	\item If the OTP code is correct, access is granted.
+	\item For other approved users, access is granted directly.
 \end{itemize}
 
 \textbf{Registration}
 \begin{itemize}[noitemsep]
-    \item The HR or Project Manager fills the registration form.
-    \item The system creates the account with status \textbf{Pending}.
-    \item The user cannot log in until administrator approval.
+	\item The HR or Project Manager fills the registration form.
+	\item The system creates the account with status \textbf{Pending}.
+	\item The user cannot log in until administrator approval.
 \end{itemize}
 
 \textbf{Administrator Approval}
 \begin{itemize}[noitemsep]
-    \item The administrator accesses the account approval interface.
-    \item Pending accounts are reviewed and approved or rejected.
-    \item On approval, the system automatically sends an email notification.
+	\item The administrator accesses the account approval interface.
+	\item Pending accounts are reviewed and approved or rejected.
+	\item On approval, the system automatically sends an email notification.
 \end{itemize}
 
 \section{Conception}
@@ -75,21 +75,56 @@ The authentication system is built around the following use cases:
 Figure~\ref{fig:auth-use-case-refinement} presents the refined authentication use cases and actor interactions used for sprint design decisions.
 
 \begin{figure}[H]
-\centering
-\IfFileExists{diagrams/auth/auth-use-case-refinement.png}{%
-    \includegraphics[width=0.96\textwidth,height=0.72\textheight,keepaspectratio]{diagrams/auth/auth-use-case-refinement.png}
-}{%
-    \fbox{\parbox{0.9\textwidth}{
-    \centering
-    \vspace{1.8cm}
-    \textit{Missing file: diagrams/auth/auth-use-case-refinement.png}\\
-    \textit{Insert authentication use case refinement diagram.}
-    \vspace{1.8cm}
-    }}
-}
-\caption{Refined use case diagram for authentication and access control}
-\label{fig:auth-use-case-refinement}
+	\centering
+	\IfFileExists{diagrams/auth/auth-use-case-refinement.png}{%
+		\includegraphics[width=0.96\textwidth,height=0.72\textheight,keepaspectratio]{diagrams/auth/auth-use-case-refinement.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{1.8cm}
+				\textit{Missing file: diagrams/auth/auth-use-case-refinement.png}\\
+				\textit{Insert authentication use case refinement diagram.}
+				\vspace{1.8cm}
+		}}
+	}
+	\caption{Refined use case diagram for authentication and access control}
+	\label{fig:auth-use-case-refinement}
 \end{figure}
+
+Figure~\ref{fig:auth-use-case-refinement} summarizes the authentication workflow through three packages: Login, Registration, and Account Approval. To make the diagram easier to understand, Table~\ref{tab:auth-use-case-description} explains each use case shown in the diagram.
+
+
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|>{\raggedright\arraybackslash}p{3.1cm}|>{\raggedright\arraybackslash}p{3.2cm}|>{\raggedright\arraybackslash}p{7.5cm}|}
+		\hline
+		\textbf{Package} & \textbf{Use Case} & \textbf{Explanation} \\
+		\hline
+		Login & Login & The user starts the authentication process by entering their email and password. This is the main use case of the login package and it triggers credential verification before access can be granted. \\
+		\hline
+		Login & Verify Credentials & This use case is included in the login process. The system checks whether the submitted email and password match an existing account and whether the account information is valid. \\
+		\hline
+		Login & Handle Invalid Credentials & This use case extends the login process when the entered email or password is incorrect. The system blocks access and displays an error message without revealing sensitive details. \\
+		\hline
+		Login & Handle Unapproved Account & This use case extends the login process when the credentials are correct but the account has not yet been approved by the administrator. The system refuses access until approval is completed. \\
+		\hline
+		Registration & Register User & A new HR or Project Manager starts account creation. This use case represents the global registration action and includes filling out the registration form. \\
+		\hline
+		Registration & Fill Registration Form & This use case is included in registration. The user enters required information such as identity, email, password, and requested role. After submission, the account is saved with a pending status. \\
+		\hline
+		Account Approval & Review Pending Accounts & The administrator opens the pending-account list to inspect registration requests. This use case is the entry point of the approval workflow and includes either approving or rejecting an account. \\
+		\hline
+		Account Approval & Approve Account & This use case is included in reviewing pending accounts. If the request is valid, the administrator approves it, changing the account status so the user can log in and access authorized features. \\
+		\hline
+		Account Approval & Reject Account & This use case is included in reviewing pending accounts. If the request is invalid or should not be accepted, the administrator rejects it and the user remains unable to access the platform. \\
+		\hline
+	\end{tabular}
+	\caption{Textual explanation of the authentication use cases shown in the diagram}
+	\label{tab:auth-use-case-description}
+	{\footnotesize\textit{Source: Author's work.}}
+\end{table}
 
 
 \clearpage
@@ -98,10 +133,10 @@ Figure~\ref{fig:auth-use-case-refinement} presents the refined authentication us
 For readability, each sequence diagram is presented below with its own caption and interpretation.
 \textbf{Authentication flow sequence:}
 \begin{enumerate}[noitemsep]
-    \item Login and token issuance (Figure~\ref{fig:auth-login-flow}).
-    \item Access to protected routes (Figure~\ref{fig:auth-protected-route-flow}).
-    \item Token expiration and re-authentication (Figure~\ref{fig:auth-token-expiration-flow}).
-    \item Logout and session invalidation (Figure~\ref{fig:auth-logout-flow}).
+	\item Login and token issuance (Figure~\ref{fig:auth-login-flow}).
+	\item Access to protected routes (Figure~\ref{fig:auth-protected-route-flow}).
+	\item Token expiration and re-authentication (Figure~\ref{fig:auth-token-expiration-flow}).
+	\item Logout and session invalidation (Figure~\ref{fig:auth-logout-flow}).
 \end{enumerate}
 
 \Needspace{0.62\textheight}
@@ -110,20 +145,20 @@ Figure~\ref{fig:auth-login-flow} shows credential submission, validation, and to
 The user sends email and password to the authentication endpoint, where credentials and account status are checked before access is granted. If the user is an Admin, the system sends an OTP code to the admin email and waits for code validation before issuing access. When validation succeeds, the backend returns a JWT used for later API calls.
 
 \begin{figure}[H]
-\centering
-\IfFileExists{diagrams/ch2-auth-login-flow.png}{%
-    \includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-login-flow.png}
-}{%
-    \fbox{\parbox{0.9\textwidth}{
-    \centering
-    \vspace{1.8cm}
-    \textit{Missing file: diagrams/ch2-auth-login-flow.png}\\
-    \textit{Insert login sequence diagram.}
-    \vspace{1.8cm}
-    }}
-}
-\caption{Login flow showing JWT token issuance}
-\label{fig:auth-login-flow}
+	\centering
+	\IfFileExists{diagrams/ch2-auth-login-flow.png}{%
+		\includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-login-flow.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{1.8cm}
+				\textit{Missing file: diagrams/ch2-auth-login-flow.png}\\
+				\textit{Insert login sequence diagram.}
+				\vspace{1.8cm}
+		}}
+	}
+	\caption{Login flow showing JWT token issuance}
+	\label{fig:auth-login-flow}
 \end{figure}
 
 
@@ -133,20 +168,20 @@ Figure~\ref{fig:auth-protected-route-flow} explains token and role verification 
 For each protected request, middleware validates token signature and expiration, then extracts user identity and role claims. The endpoint runs only if RBAC permissions allow access to the requested resource.
 
 \begin{figure}[H]
-\centering
-\IfFileExists{diagrams/ch2-auth-protected-route-flow.png}{%
-    \includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-protected-route-flow.png}
-}{%
-    \fbox{\parbox{0.9\textwidth}{
-    \centering
-    \vspace{1.8cm}
-    \textit{Missing file: diagrams/ch2-auth-protected-route-flow.png}\\
-    \textit{Insert protected route access sequence diagram.}
-    \vspace{1.8cm}
-    }}
-}
-\caption{Protected route access with JWT verification}
-\label{fig:auth-protected-route-flow}
+	\centering
+	\IfFileExists{diagrams/ch2-auth-protected-route-flow.png}{%
+		\includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-protected-route-flow.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{1.8cm}
+				\textit{Missing file: diagrams/ch2-auth-protected-route-flow.png}\\
+				\textit{Insert protected route access sequence diagram.}
+				\vspace{1.8cm}
+		}}
+	}
+	\caption{Protected route access with JWT verification}
+	\label{fig:auth-protected-route-flow}
 \end{figure}
 
 
@@ -156,20 +191,20 @@ Figure~\ref{fig:auth-token-expiration-flow} describes session expiration and re-
 When the token lifetime ends, the API rejects the request with an unauthorized response and the client redirects the user to sign in again. This mechanism enforces short sessions and reduces risks linked to stale credentials.
 
 \begin{figure}[H]
-\centering
-\IfFileExists{diagrams/ch2-auth-token-expiration-flow.png}{%
-    \includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-token-expiration-flow.png}
-}{%
-    \fbox{\parbox{0.9\textwidth}{
-    \centering
-    \vspace{1.8cm}
-    \textit{Missing file: diagrams/ch2-auth-token-expiration-flow.png}\\
-    \textit{Insert token expiration sequence diagram.}
-    \vspace{1.8cm}
-    }}
-}
-\caption{Token expiration and re-authentication flow}
-\label{fig:auth-token-expiration-flow}
+	\centering
+	\IfFileExists{diagrams/ch2-auth-token-expiration-flow.png}{%
+		\includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-token-expiration-flow.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{1.8cm}
+				\textit{Missing file: diagrams/ch2-auth-token-expiration-flow.png}\\
+				\textit{Insert token expiration sequence diagram.}
+				\vspace{1.8cm}
+		}}
+	}
+	\caption{Token expiration and re-authentication flow}
+	\label{fig:auth-token-expiration-flow}
 \end{figure}
 
 
@@ -179,20 +214,20 @@ Figure~\ref{fig:auth-logout-flow} presents controlled session termination and to
 During logout, the client clears local authentication data and stops sending the previous token in future requests. Any later access to protected routes requires a new login and a newly issued token.
 
 \begin{figure}[H]
-\centering
-\IfFileExists{diagrams/ch2-auth-logout-flow.png}{%
-    \includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-logout-flow.png}
-}{%
-    \fbox{\parbox{0.9\textwidth}{
-    \centering
-    \vspace{1.8cm}
-    \textit{Missing file: diagrams/ch2-auth-logout-flow.png}\\
-    \textit{Insert logout sequence diagram.}
-    \vspace{1.8cm}
-    }}
-}
-\caption{Logout flow with token invalidation}
-\label{fig:auth-logout-flow}
+	\centering
+	\IfFileExists{diagrams/ch2-auth-logout-flow.png}{%
+		\includegraphics[width=0.94\textwidth,height=0.52\textheight,keepaspectratio]{diagrams/ch2-auth-logout-flow.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{1.8cm}
+				\textit{Missing file: diagrams/ch2-auth-logout-flow.png}\\
+				\textit{Insert logout sequence diagram.}
+				\vspace{1.8cm}
+		}}
+	}
+	\caption{Logout flow with token invalidation}
+	\label{fig:auth-logout-flow}
 \end{figure}
 
 
@@ -203,20 +238,20 @@ The implemented authentication interface includes the login view, credential val
 Figure~\ref{fig:auth-login-ui} shows email/password authentication, user feedback on invalid credentials, and the Admin OTP verification step.
 
 \begin{figure}[H]
-\centering
-\IfFileExists{assets/auth/auth-login-screen.png}{%
-    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/auth-login-screen.png}
-}{%
-    \fbox{\parbox{0.9\textwidth}{
-    \centering
-    \vspace{1.6cm}
-    \textit{Missing file: assets/auth/auth-login-screen.png}\\
-    \textit{Insert screenshot of the login page interface.}
-    \vspace{1.6cm}
-    }}
-}
-\caption{Login interface of the application}
-\label{fig:auth-login-ui}
+	\centering
+	\IfFileExists{assets/auth/auth-login-screen.png}{%
+		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/auth-login-screen.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{1.6cm}
+				\textit{Missing file: assets/auth/auth-login-screen.png}\\
+				\textit{Insert screenshot of the login page interface.}
+				\vspace{1.6cm}
+		}}
+	}
+	\caption{Login interface of the application}
+	\label{fig:auth-login-ui}
 \end{figure}
 
 
@@ -226,20 +261,20 @@ After entering valid login credentials, the Admin is asked to enter the OTP code
 Figure~\ref{fig:auth-admin-otp-ui} presents the extra verification step where the Admin enters the code received by email before access is granted.
 
 \begin{figure}[H]
-\centering
-\IfFileExists{assets/auth/admin-otp-screen.png}{%
-    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/admin-otp-screen.png}
-}{%
-    \fbox{\parbox{0.9\textwidth}{
-    \centering
-    \vspace{1.6cm}
-    \textit{Missing file: assets/auth/admin-otp-screen.png}\\
-    \textit{Insert screenshot of the Admin OTP verification page.}
-    \vspace{1.6cm}
-    }}
-}
-\caption{Administrator OTP verification interface}
-\label{fig:auth-admin-otp-ui}
+	\centering
+	\IfFileExists{assets/auth/admin-otp-screen.png}{%
+		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/admin-otp-screen.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{1.6cm}
+				\textit{Missing file: assets/auth/admin-otp-screen.png}\\
+				\textit{Insert screenshot of the Admin OTP verification page.}
+				\vspace{1.6cm}
+		}}
+	}
+	\caption{Administrator OTP verification interface}
+	\label{fig:auth-admin-otp-ui}
 \end{figure}
 
 
@@ -249,20 +284,20 @@ The registration interface allows account creation for operational roles before 
 Figure~\ref{fig:auth-register-ui} presents account creation for HR and Project Manager roles with pending approval status.
 
 \begin{figure}[H]
-\centering
-\IfFileExists{assets/auth/auth-register-screen.png}{%
-    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/auth-register-screen.png}
-}{%
-    \fbox{\parbox{0.9\textwidth}{
-    \centering
-    \vspace{1.6cm}
-    \textit{Missing file: assets/auth/auth-register-screen.png}\\
-    \textit{Insert screenshot of the registration page interface.}
-    \vspace{1.6cm}
-    }}
-}
-\caption{User registration interface}
-\label{fig:auth-register-ui}
+	\centering
+	\IfFileExists{assets/auth/auth-register-screen.png}{%
+		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/auth-register-screen.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{1.6cm}
+				\textit{Missing file: assets/auth/auth-register-screen.png}\\
+				\textit{Insert screenshot of the registration page interface.}
+				\vspace{1.6cm}
+		}}
+	}
+	\caption{User registration interface}
+	\label{fig:auth-register-ui}
 \end{figure}
 
 
@@ -272,20 +307,20 @@ After registration, accounts remain pending until administrator approval.
 Figure~\ref{fig:admin-approve-account-ui} shows the pending-user list and approval/rejection actions.
 
 \begin{figure}[H]
-\centering
-\IfFileExists{assets/auth/admin-approve-account.png}{%
-    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/admin-approve-account.png}
-}{%
-    \fbox{\parbox{0.9\textwidth}{
-    \centering
-    \vspace{1.6cm}
-    \textit{Missing file: assets/auth/admin-approve-account.png}\\
-    \textit{Insert screenshot of the admin approval interface.}
-    \vspace{1.6cm}
-    }}
-}
-\caption{Administrator page for account approval}
-\label{fig:admin-approve-account-ui}
+	\centering
+	\IfFileExists{assets/auth/admin-approve-account.png}{%
+		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/admin-approve-account.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{1.6cm}
+				\textit{Missing file: assets/auth/admin-approve-account.png}\\
+				\textit{Insert screenshot of the admin approval interface.}
+				\vspace{1.6cm}
+		}}
+	}
+	\caption{Administrator page for account approval}
+	\label{fig:admin-approve-account-ui}
 \end{figure}
 
 
@@ -295,57 +330,57 @@ When an account is approved, the system sends an automatic activation email.
 Figure~\ref{fig:account-approval-email} confirms automated communication of account activation.
 
 \begin{figure}[H]
-\centering
-\IfFileExists{assets/auth/account-approval-email.png}{%
-    \includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/account-approval-email.png}
-}{%
-    \fbox{\parbox{0.9\textwidth}{
-    \centering
-    \vspace{1.6cm}
-    \textit{Missing file: assets/auth/account-approval-email.png}\\
-    \textit{Insert screenshot of the account approval email.}
-    \vspace{1.6cm}
-    }}
-}
-\caption{Account approval email notification}
-\label{fig:account-approval-email}
+	\centering
+	\IfFileExists{assets/auth/account-approval-email.png}{%
+		\includegraphics[width=0.92\textwidth,height=0.48\textheight,keepaspectratio]{assets/auth/account-approval-email.png}
+	}{%
+		\fbox{\parbox{0.9\textwidth}{
+				\centering
+				\vspace{1.6cm}
+				\textit{Missing file: assets/auth/account-approval-email.png}\\
+				\textit{Insert screenshot of the account approval email.}
+				\vspace{1.6cm}
+		}}
+	}
+	\caption{Account approval email notification}
+	\label{fig:account-approval-email}
 \end{figure}
 
 
 \subsection{Error Handling Scenarios}
 The implemented logic provides explicit user feedback in critical cases:
 \begin{itemize}[noitemsep]
-    \item Incorrect email/password: the system displays an authentication error.
-    \item Correct credentials with pending account: access is denied with an approval-status message.
-    \item Admin login with invalid or expired OTP: access is denied until the correct code is entered.
+	\item Incorrect email/password: the system displays an authentication error.
+	\item Correct credentials with pending account: access is denied with an approval-status message.
+	\item Admin login with invalid or expired OTP: access is denied until the correct code is entered.
 \end{itemize}
 
 \section{Security Considerations}
 The following security controls were applied in Authentication and Access Control:
 
 \begin{table}[H]
-\centering
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|l|>{\raggedright\arraybackslash}p{9.8cm}|}
-\hline
-\textbf{Control} & \textbf{Description} \\
-\hline
-Password hashing & Passwords are stored as hashes (e.g., bcrypt) rather than plaintext. \\
-\hline
-Input validation & Form inputs are validated to prevent invalid or malformed authentication requests. \\
-\hline
-Secure error handling & Authentication errors do not expose sensitive system details. \\
-\hline
-RBAC enforcement & Access to protected resources depends on verified user role permissions. \\
-\hline
-Approval-gated access & Users cannot access business features unless account status is approved by the administrator. \\
-\hline
-Admin OTP verification & Admin users must validate a one-time password sent by email before login is completed. \\
-\hline
-\end{tabular}
-\caption{Authentication security controls}
-\label{tab:authentication-security-controls}
-{\footnotesize\textit{Source: Author's work.}}
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|l|>{\raggedright\arraybackslash}p{9.8cm}|}
+		\hline
+		\textbf{Control} & \textbf{Description} \\
+		\hline
+		Password hashing & Passwords are stored as hashes (e.g., bcrypt) rather than plaintext. \\
+		\hline
+		Input validation & Form inputs are validated to prevent invalid or malformed authentication requests. \\
+		\hline
+		Secure error handling & Authentication errors do not expose sensitive system details. \\
+		\hline
+		RBAC enforcement & Access to protected resources depends on verified user role permissions. \\
+		\hline
+		Approval-gated access & Users cannot access business features unless account status is approved by the administrator. \\
+		\hline
+		Admin OTP verification & Admin users must validate a one-time password sent by email before login is completed. \\
+		\hline
+	\end{tabular}
+	\caption{Authentication security controls}
+	\label{tab:authentication-security-controls}
+	{\footnotesize\textit{Source: Author's work.}}
 \end{table}
 
 \section{Conclusion}
