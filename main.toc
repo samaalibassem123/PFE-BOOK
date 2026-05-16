@@ -73,14 +73,15 @@
 \contentsline {section}{\numberline {3}Sprint Design}{45}{section.4.3}%
 \contentsline {section}{\numberline {4}Conception}{46}{section.4.4}%
 \contentsline {subsection}{\numberline {4.1}Use Case Refinement}{46}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.2}Detailed Sequence Diagrams}{49}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.2}Use Case Refinement Description}{48}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.3}Detailed Sequence Diagrams}{49}{subsection.4.4.3}%
 \contentsline {section}{\numberline {5}Sprint Realization}{52}{section.4.5}%
 \contentsline {subsection}{\numberline {5.1}Authentication Interface}{52}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {5.2}Admin OTP Verification Interface}{53}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {5.3}Registration Interface}{54}{subsection.4.5.3}%
 \contentsline {subsection}{\numberline {5.4}Administrator Account Approval Interface}{54}{subsection.4.5.4}%
 \contentsline {subsection}{\numberline {5.5}Approval Email Notification}{55}{subsection.4.5.5}%
-\contentsline {subsection}{\numberline {5.6}Error Handling Scenarios}{55}{subsection.4.5.6}%
+\contentsline {subsection}{\numberline {5.6}Error Handling Scenarios}{56}{subsection.4.5.6}%
 \contentsline {section}{\numberline {6}Security Considerations}{56}{section.4.6}%
 \contentsline {section}{\numberline {7}Conclusion}{56}{section.4.7}%
 \contentsline {chapter}{\numberline {5}Admin Dashboard and Project Assignment}{57}{chapter.5}%

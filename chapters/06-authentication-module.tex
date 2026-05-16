@@ -77,7 +77,7 @@ Figure~\ref{fig:auth-use-case-refinement} presents the refined authentication us
 \begin{figure}[H]
 	\centering
 	\IfFileExists{diagrams/auth/auth-use-case-refinement.png}{%
-		\includegraphics[width=0.96\textwidth,height=0.72\textheight,keepaspectratio]{diagrams/auth/auth-use-case-refinement.png}
+		\makebox[\textwidth][c]{\includegraphics[width=1.08\textwidth,height=0.94\textheight,keepaspectratio]{diagrams/auth/auth-use-case-refinement.png}}
 	}{%
 		\fbox{\parbox{0.9\textwidth}{
 				\centering
@@ -91,38 +91,46 @@ Figure~\ref{fig:auth-use-case-refinement} presents the refined authentication us
 	\label{fig:auth-use-case-refinement}
 \end{figure}
 
-Figure~\ref{fig:auth-use-case-refinement} summarizes the authentication workflow through three packages: Login, Registration, and Account Approval. To make the diagram easier to understand, Table~\ref{tab:auth-use-case-description} explains each use case shown in the diagram.
+Figure~\ref{fig:auth-use-case-refinement} summarizes the authentication workflow through three packages: Login, Registration, and Account Approval.
 
-
+\clearpage
+\subsection{Use Case Refinement Description}
+This subsection gives a simple textual description of the use cases shown in the refined diagram. It explains the role of each package and clarifies the main actions performed during login, registration, and account approval. Table~\ref{tab:auth-use-case-description} presents these use cases in an organized form.
 
 \begin{table}[H]
 	\centering
-	\renewcommand{\arraystretch}{1.2}
-	\begin{tabular}{|>{\raggedright\arraybackslash}p{3.1cm}|>{\raggedright\arraybackslash}p{3.2cm}|>{\raggedright\arraybackslash}p{7.5cm}|}
-		\hline
-		\textbf{Package} & \textbf{Use Case} & \textbf{Explanation} \\
-		\hline
-		Login & Login & The user starts the authentication process by entering their email and password. This is the main use case of the login package and it triggers credential verification before access can be granted. \\
-		\hline
-		Login & Verify Credentials & This use case is included in the login process. The system checks whether the submitted email and password match an existing account and whether the account information is valid. \\
-		\hline
-		Login & Handle Invalid Credentials & This use case extends the login process when the entered email or password is incorrect. The system blocks access and displays an error message without revealing sensitive details. \\
-		\hline
-		Login & Handle Unapproved Account & This use case extends the login process when the credentials are correct but the account has not yet been approved by the administrator. The system refuses access until approval is completed. \\
-		\hline
-		Registration & Register User & A new HR or Project Manager starts account creation. This use case represents the global registration action and includes filling out the registration form. \\
-		\hline
-		Registration & Fill Registration Form & This use case is included in registration. The user enters required information such as identity, email, password, and requested role. After submission, the account is saved with a pending status. \\
-		\hline
-		Account Approval & Review Pending Accounts & The administrator opens the pending-account list to inspect registration requests. This use case is the entry point of the approval workflow and includes either approving or rejecting an account. \\
-		\hline
-		Account Approval & Approve Account & This use case is included in reviewing pending accounts. If the request is valid, the administrator approves it, changing the account status so the user can log in and access authorized features. \\
-		\hline
-		Account Approval & Reject Account & This use case is included in reviewing pending accounts. If the request is invalid or should not be accepted, the administrator rejects it and the user remains unable to access the platform. \\
-		\hline
-	\end{tabular}
-	\caption{Textual explanation of the authentication use cases shown in the diagram}
+	\normalsize
+	\setlength{\tabcolsep}{6pt}
+	\renewcommand{\arraystretch}{1.25}
+	\makebox[\textwidth][c]{%
+		\begin{tabular}{|>{\raggedright\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}p{3.4cm}|>{\raggedright\arraybackslash}p{7.7cm}|}
+			\hline
+			\rowcolor{gray!15}
+			\textbf{Package} & \textbf{Use Case} & \textbf{Simple Explanation} \\
+			\hline
+			\textbf{Login} & Login & The user enters their email and password. The system checks the account before giving access. \\
+			\hline
+			\textbf{Login} & Verify Credentials & The system checks if the email and password are correct and belong to a valid account. \\
+			\hline
+			\textbf{Login} & Handle Invalid Credentials & If the email or password is wrong, the system refuses access and shows an error message. \\
+			\hline
+			\textbf{Login} & Handle Unapproved Account & If the account is still pending, the system blocks login until the administrator approves it. \\
+			\hline
+			\textbf{Registration} & Register User & A new HR or Project Manager creates an account using the registration form. \\
+			\hline
+			\textbf{Registration} & Fill Registration Form & The user enters their information, email, password, and role. The account is saved as pending. \\
+			\hline
+			\textbf{Account Approval} & Review Pending Accounts & The administrator checks the list of new accounts waiting for approval. \\
+			\hline
+			\textbf{Account Approval} & Approve Account & If the request is valid, the administrator approves the account so the user can log in. \\
+			\hline
+			\textbf{Account Approval} & Reject Account & If the request is not valid, the administrator rejects it and the user cannot access the platform. \\
+			\hline
+		\end{tabular}%
+	}
+	\caption{Simple explanation of the authentication use cases}
 	\label{tab:auth-use-case-description}
+	\vspace{-0.2em}
 	{\footnotesize\textit{Source: Author's work.}}
 \end{table}
 
